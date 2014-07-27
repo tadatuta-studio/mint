@@ -12,10 +12,31 @@
     content: [
         {
             block: 'header',
+            mix: {
+                block: 'clearfix'
+            },
             content: [
                 {
                     block: 'logo',
                     content: 'mint'
+                },
+                {
+                    block: 'call-us',
+                    content: [
+                        {
+                            elem: 'phone',
+                            content: '+7 (495) 664-21-15'
+                        },
+                        {
+                            elem: 'schedule',
+                            content: 'Круглосуточно, без выходных'
+                        },
+                        {
+                            block: 'button',
+                            mix: { block: 'call-us', elem: 'button' },
+                            content: 'Заказать звонок'
+                        }
+                    ]
                 },
                 {
                     block: 'nav',
@@ -62,24 +83,6 @@
                         }
                     ]
                 },
-                {
-                    block: 'call-us',
-                    content: [
-                        {
-                            elem: 'phone',
-                            content: '+7 (495) 664-21-15'
-                        },
-                        {
-                            elem: 'schedule',
-                            content: 'Круглосуточно, без выходных'
-                        },
-                        {
-                            block: 'button',
-                            mix: { block: 'call-us', elem: 'button' },
-                            content: 'Заказать звонок'
-                        }
-                    ]
-                }
             ]
         },
         {
@@ -120,9 +123,9 @@
                                     content: 'Заказать консультацию'
                                 }
                             ]
-                        } 
+                        }
                     ]
-                }    
+                }
             ]
         },
         {
@@ -174,25 +177,25 @@
                                     ]
                                 }
                             ]
-                        },   
+                        },
                         {
                             block: 'timer-button',
                             content: [
                             ]
                         }
                     ]
-                }    
+                }
             ]
         },
         {
-            block: 'increase-sales',
+            block: 'stages',
             content: [
                 {
-                    block: 'header-increase-sales',
+                    elem: 'title',
                     content: 'Как мы увеличиваем продажи'
                 },
                 {
-                    block: 'work-stages',
+                    elem: 'inner',
                     content: [
                         {
                             block: 'stage',
@@ -298,27 +301,145 @@
                         }
                     ]
                 }
-                
             ]
         },
         {
             block: 'portfolio',
             content: [
+                {
+                    elem: 'title',
+                    content: 'Результат нашей работы'
+                },
+                {
+                    block: 'slide-show',
+                    content: [
+                        {
+                            elem: 'slide',
+                            content: [
+                                {
+                                    elem: 'image',
+                                    url: 'http://tadatuta.ru',
+                                    alt: 'я то что будет если не подгрузится картинка',
+                                    title: 'я то что покажется по наведению мыши'
+                                },
+                                {
+                                    elem: 'description',
+                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                },
+                                {
+                                    elem: 'price',
+                                    content: 'От 28 000 рублей'
+                                },
+                                {
+                                    elem: 'result',
+                                    content: 'Проект окупился через 10 дней после запуска'
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
-            block: 'about',
+            block: 'features',
             content: [
+                {
+                    elem: 'title',
+                    content: 'Наша студия - лучший выбор для увеличения ваших продаж'
+                },
+                {
+                    elem: 'inner',
+                    content: [
+                        {
+                            block: 'features',
+                            mods: { type: 'warranty' },
+                            content: 'Гарантируем рост ваших продаж. Или вернем деньги'
+                        },
+                        {
+                            block: 'features',
+                            mods: { type: 'geography' },
+                            content: 'Работаем по всей России'
+                        },
+                        {
+                            block: 'features',
+                            mods: { type: 'experience' },
+                            content: 'Опыт работы — 8 лет'
+                        },
+                        {
+                            block: 'features',
+                            mods: { type: 'projects' },
+                            content: '50+ проектов'
+                        },
+                        {
+                            block: 'features',
+                            mods: { type: 'team' },
+                            content: 'Команда профессионалов'
+                        },
+                        {
+                            block: 'features',
+                            mods: { type: 'approach' },
+                            content: 'Индивидуальный подход. Весь спектр услуг'
+                        }
+                    ]
+                }
             ]
         },
         {
-            block: 'action2',
-            content: [
-            ]
+            block: 'price',
+            content: {
+                elem: 'title',
+                content: [
+                     'Профессиональные лендинги<br>',
+                     'от ',
+                     {
+                        elem: 'old', // TODO: rename
+                        content: '50 000'
+                     },
+                     '28 000 рублей'
+                ]
+            }
         },
         {
             block: 'contacts',
             content: [
+                {
+                    block: 'order',
+                    content: [
+                        {
+                            elem: 'description',
+                            content: 'Оставьте заявку на бесплатный маркетинговый анализ вашего рынка. Наш менеджер свяжется с вами в течении рабочего дня.'
+                        },
+                        {
+                            elem: 'or',
+                            content: 'Или позвоните нам'
+                        },
+                        {
+                            elem: 'phone',
+                            content: '+7 (495) 664-21-15'
+                        }
+                    ]
+                },
+                {
+                    block: 'form',
+                    content: [
+                        {
+                            block: 'input',
+                            name: 'name'
+                        },
+                        {
+                            block: 'input',
+                            name: 'phone'
+                        },
+                        {
+                            elem: 'hint',
+                            content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
+                        },
+                        {
+                            block: 'button',
+                            content: 'Заказать консультацию'
+                        }
+                    ]
+                }
             ]
         }
     ]

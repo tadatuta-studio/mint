@@ -1,0 +1,4 @@
+block('features').content()({
+    elem: 'inner',
+    content: applyNext()
+});

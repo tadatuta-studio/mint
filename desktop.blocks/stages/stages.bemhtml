@@ -1,0 +1,4 @@
+block('stages').content()({
+    elem: 'inner',
+    content: applyNext()
+});

@@ -1,0 +1,9 @@
+.nav {
+    margin: 0;
+    padding-top: 36px;
+}
+
+.nav__item {
+    display: inline;
+    margin-right: 30px;
+}

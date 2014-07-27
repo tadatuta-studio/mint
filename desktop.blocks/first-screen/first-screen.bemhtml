@@ -1,0 +1,4 @@
+block('first-screen').content()({
+    elem: 'inner',
+    content: applyNext()
+});

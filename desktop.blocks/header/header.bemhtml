@@ -1,0 +1,4 @@
+block('header').content()({
+    elem: 'inner',
+    content: applyNext()
+});

@@ -1,0 +1,4 @@
+block('price').content()({
+    elem: 'inner',
+    content: applyNext()
+});

@@ -1,0 +1,4 @@
+block('contacts').content()({
+    elem: 'inner',
+    content: applyNext()
+});

@@ -1,0 +1,4 @@
+block('portfolio').content()({
+    elem: 'inner',
+    content: applyNext()
+});
