@@ -1,0 +1,19 @@
+.order
+{
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    width: 300px;
+}
+.order__description
+{
+    font-size: 18px;
+}
+.order__or
+{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #FC3307;
+}

@@ -1,0 +1,11 @@
+.timer
+{
+    font-size: 49px;
+    margin-bottom: 20px;
+}
+.timer__item
+{
+    background: #FC005E;
+    padding: 10px 20px;
+    display: inline-block;
+}

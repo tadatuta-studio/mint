@@ -1,4 +1,14 @@
 .contacts__inner {
-    width: 1000px;
-    margin: auto;
+    /*width: 1000px;*/
+    margin: 30px auto;
+    padding: 30px 100px;
+    white-space: nowrap;
+}
+.contacts__form
+{
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin-left: 220px;
 }

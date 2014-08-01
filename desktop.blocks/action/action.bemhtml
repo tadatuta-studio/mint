@@ -1,4 +1,5 @@
-block('action').content()({
-    elem: 'inner',
-    content: applyNext()
-});
+block action {
+    elem old {
+        tag: 'span'
+    }
+}

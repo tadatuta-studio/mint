@@ -12,9 +12,14 @@
     content: [
         {
             block: 'header',
-            mix: {
-                block: 'clearfix'
-            },
+            mix: [
+                {
+                    block: 'clearfix'
+                },
+                {
+                    block: 'inner'
+                }
+            ],
             content: [
                 {
                     block: 'logo',
@@ -33,7 +38,10 @@
                         },
                         {
                             block: 'button',
-                            mix: { block: 'call-us', elem: 'button' },
+                            mix: [
+                                { block: 'call-us', elem: 'button' }
+                            ],
+                            mods: { size: 'small', color: 'orange'},
                             content: 'Заказать звонок'
                         }
                     ]
@@ -87,6 +95,14 @@
         },
         {
             block: 'first-screen',
+            mix: [
+                {
+                    block: 'clearfix'
+                },
+                {
+                    block: 'inner'
+                }
+            ],
             content: [
                 {
                     block: 'slide-show',
@@ -101,10 +117,12 @@
                     content: [
                         {
                             block: 'slogan',
+                            mods: { level: 'one' },
                             content: 'Landing page и контекстаня реклама для вашего бизнеса с гарантией прибыли'
                         },
                         {
                             block: 'slogan',
+                            mods: { level: 'two' },
                             content: 'Мы реально увеличиваем ваши продажи'
                         },
                         {
@@ -112,14 +130,17 @@
                             content: [
                                 {
                                     block: 'input',
-                                    name: 'name'
+                                    name: 'name',
+                                    val: 'Имя'
                                 },
                                 {
                                     block: 'input',
-                                    name: 'phone'
+                                    name: 'phone',
+                                    val: 'Телефон'
                                 },
                                 {
                                     block: 'button',
+                                    mods: { size: 'big', color: 'green'},
                                     content: 'Заказать консультацию'
                                 }
                             ]
@@ -130,6 +151,14 @@
         },
         {
             block: 'action',
+            mix: [
+                {
+                    block: 'clearfix'
+                },
+                {
+                    block: 'inner'
+                }
+            ],
             content: [
                 {
                     elem: 'text',
@@ -162,26 +191,28 @@
                             block: 'timer',
                             content: [
                                 {
-                                    block: 'days',
-                                    content: [
-                                    ]
+                                    elem: 'item',
+                                    mix:{ block: 'days'},
+                                    content: '00'
                                 },
+                                ' : ',
                                 {
-                                    block: 'hours',
-                                    content: [
-                                    ]
+                                    elem: 'item',
+                                    mix:{ block: 'hours'},
+                                    content: '00'
                                 },
+                                ' : ',
                                 {
-                                    block: 'minutes',
-                                    content: [
-                                    ]
+                                    elem: 'item',
+                                    mix:{ block: 'minutes'},
+                                    content: '00'
                                 }
                             ]
                         },
                         {
-                            block: 'timer-button',
-                            content: [
-                            ]
+                            block: 'description',
+                            mods: { size: 'small', color: 'orange'},
+                            content: 'Предложение действует до 01. 07. 2014'
                         }
                     ]
                 }
@@ -191,11 +222,15 @@
             block: 'stages',
             content: [
                 {
-                    elem: 'title',
+                    block: 'heading',
+                    mods: { level: '3', color: 'green' },
                     content: 'Как мы увеличиваем продажи'
                 },
                 {
                     elem: 'inner',
+                    mix: {
+                            block: 'clearfix'
+                        },
                     content: [
                         {
                             block: 'stage',
@@ -296,8 +331,16 @@
                             ]
                         },
                         {
-                            block: 'receive-brief-button',
-                            content: 'Получить бриф'
+                            block: 'stage',
+                            mods: { type: 'order' },
+                            content: [
+                                {
+                                    block: 'button',
+                                    mods: { size: 'middle', color: 'green'},
+                                    // mix: {block: 'stages', elem: 'get-brief'},
+                                    content: 'Получить бриф'
+                                }
+                            ]
                         }
                     ]
                 }
@@ -305,9 +348,13 @@
         },
         {
             block: 'portfolio',
+            mix: {
+                    block: 'clearfix'
+                },
             content: [
                 {
-                    elem: 'title',
+                    block: 'heading',
+                    mods: { level: '3', color: 'orange' },
                     content: 'Результат нашей работы'
                 },
                 {
@@ -344,40 +391,41 @@
             block: 'features',
             content: [
                 {
-                    elem: 'title',
+                    block: 'heading',
+                    mods: { level: '3', color: 'green' },
                     content: 'Наша студия - лучший выбор для увеличения ваших продаж'
                 },
                 {
                     elem: 'inner',
                     content: [
                         {
-                            block: 'features',
-                            mods: { type: 'warranty' },
+                            elem: 'item',
+                            elemMods: { type: 'warranty' },
                             content: 'Гарантируем рост ваших продаж. Или вернем деньги'
                         },
                         {
-                            block: 'features',
-                            mods: { type: 'geography' },
+                            elem: 'item',
+                            elemMods: { type: 'geography' },
                             content: 'Работаем по всей России'
                         },
                         {
-                            block: 'features',
-                            mods: { type: 'experience' },
+                            elem: 'item',
+                            elemMods: { type: 'experience' },
                             content: 'Опыт работы — 8 лет'
                         },
                         {
-                            block: 'features',
-                            mods: { type: 'projects' },
+                            elem: 'item',
+                            elemMods: { type: 'projects' },
                             content: '50+ проектов'
                         },
                         {
-                            block: 'features',
-                            mods: { type: 'team' },
+                            elem: 'item',
+                            elemMods: { type: 'team' },
                             content: 'Команда профессионалов'
                         },
                         {
-                            block: 'features',
-                            mods: { type: 'approach' },
+                            elem: 'item',
+                            elemMods: { type: 'approach' },
                             content: 'Индивидуальный подход. Весь спектр услуг'
                         }
                     ]
@@ -414,21 +462,25 @@
                             content: 'Или позвоните нам'
                         },
                         {
-                            elem: 'phone',
+                            block: 'description',
+                            mods: { size: 'medium', color: 'orange'},
                             content: '+7 (495) 664-21-15'
                         }
                     ]
                 },
                 {
                     block: 'form',
+                    mix: { block: 'contacts', elem: 'form' },
                     content: [
                         {
                             block: 'input',
-                            name: 'name'
+                            name: 'name',
+                            val: 'Имя'
                         },
                         {
                             block: 'input',
-                            name: 'phone'
+                            name: 'phone',
+                            val: 'Телефон'
                         },
                         {
                             elem: 'hint',
@@ -436,6 +488,7 @@
                         },
                         {
                             block: 'button',
+                            mods: { size: 'big', color: 'pink'},
                             content: 'Заказать консультацию'
                         }
                     ]

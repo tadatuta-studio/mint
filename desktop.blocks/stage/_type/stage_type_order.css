@@ -1,0 +1,10 @@
+.stage_type_order
+{
+    position: relative;
+}
+
+.stage_type_order .button
+{
+    position: absolute;
+    bottom: -110px;
+}

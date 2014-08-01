@@ -1,4 +1,5 @@
-block('stages').content()({
-    elem: 'inner',
-    content: applyNext()
-});
+block stages {
+    elem inner {
+        tag: 'ul'
+    }
+}

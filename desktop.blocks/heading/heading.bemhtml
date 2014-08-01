@@ -1,0 +1,3 @@
+block heading {
+    tag: { return 'h' + (this.ctx.mods && this.ctx.mods.level ? this.ctx.mods.level : 1) }
+}

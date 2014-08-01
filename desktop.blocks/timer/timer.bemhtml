@@ -1,0 +1,5 @@
+block timer {
+    elem item {
+        tag: 'span'
+    }
+}

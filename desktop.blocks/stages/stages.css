@@ -1,4 +1,6 @@
 .stages__inner {
-    width: 1000px;
+    /*width: 1000px;*/
     margin: auto;
+    position: relative;
 }
+

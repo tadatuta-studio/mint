@@ -1,4 +1,5 @@
-block('price').content()({
-    elem: 'inner',
-    content: applyNext()
-});
+block price {
+    elem old {
+        tag: 'span'
+    }
+}

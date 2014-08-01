@@ -1,0 +1,12 @@
+.input__control
+{
+    width: 265px;
+    height: 35px;
+    color: #1bcb88;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.input:first-child .input__control
+{
+    margin-bottom: 20px;
+}
