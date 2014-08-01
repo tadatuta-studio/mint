@@ -53,7 +53,7 @@
                             elem: 'item',
                             content: {
                                 block: 'link',
-                                url: '#',
+                                url: '#how',
                                 content: 'Как мы увеличиваем продажи'
                             }
                         },
@@ -61,7 +61,7 @@
                             elem: 'item',
                             content: {
                                 block: 'link',
-                                url: '#',
+                                url: '#about',
                                 content: 'О нас'
                             }
                         },
@@ -69,7 +69,7 @@
                             elem: 'item',
                             content: {
                                 block: 'link',
-                                url: '#',
+                                url: '#result',
                                 content: 'Результаты'
                             }
                         },
@@ -77,7 +77,7 @@
                             elem: 'item',
                             content: {
                                 block: 'link',
-                                url: '#',
+                                url: '#why-we',
                                 content: 'Почему мы'
                             }
                         },
@@ -85,7 +85,7 @@
                             elem: 'item',
                             content: {
                                 block: 'link',
-                                url: '#',
+                                url: '#services',
                                 content: 'Услуги'
                             }
                         }
@@ -118,7 +118,14 @@
                         {
                             block: 'slogan',
                             mods: { level: 'one' },
-                            content: 'Landing page и контекстаня реклама для вашего бизнеса с гарантией прибыли'
+                            content: [
+                                {
+                                    block: 'link',
+                                    attrs: { name: 'about' },
+                                    content: ''
+                                },
+                                'Landing page и контекстаня реклама для вашего бизнеса с гарантией прибыли'
+                            ]
                         },
                         {
                             block: 'slogan',
@@ -131,12 +138,12 @@
                                 {
                                     block: 'input',
                                     name: 'name',
-                                    val: 'Имя'
+                                    placeholder: 'Имя'
                                 },
                                 {
                                     block: 'input',
                                     name: 'phone',
-                                    val: 'Телефон'
+                                    placeholder: 'Телефон'
                                 },
                                 {
                                     block: 'button',
@@ -224,7 +231,14 @@
                 {
                     block: 'heading',
                     mods: { level: '3', color: 'green' },
-                    content: 'Как мы увеличиваем продажи'
+                    content: [
+                        {
+                            block: 'link',
+                            attrs: { name: 'how' },
+                            content: ''
+                        },
+                        'Как мы увеличиваем продажи'
+                    ]
                 },
                 {
                     elem: 'inner',
@@ -355,7 +369,14 @@
                 {
                     block: 'heading',
                     mods: { level: '3', color: 'orange' },
-                    content: 'Результат нашей работы'
+                    content: [
+                        {
+                            block: 'link',
+                            attrs: { name: 'result' },
+                            content: ''
+                        },
+                        'Результат нашей работы'
+                    ]
                 },
                 {
                     block: 'slide-show',
@@ -393,7 +414,14 @@
                 {
                     block: 'heading',
                     mods: { level: '3', color: 'green' },
-                    content: 'Наша студия - лучший выбор для увеличения ваших продаж'
+                    content: [
+                        {
+                            block: 'link',
+                            attrs: { name: 'why-we' },
+                            content: ''
+                        },
+                        'Наша студия - лучший выбор для увеличения ваших продаж'
+                    ]
                 },
                 {
                     elem: 'inner',
@@ -437,13 +465,19 @@
             content: {
                 elem: 'title',
                 content: [
-                     'Профессиональные лендинги<br>',
-                     'от ',
-                     {
-                        elem: 'old', // TODO: rename
-                        content: '50 000'
-                     },
-                     '28 000 рублей'
+                    {
+                        block: 'link',
+                        attrs: { name: 'services' },
+                        content: ''
+                    },
+                    'Профессиональные лендинги<br>',
+
+                    'от ',
+                    {
+                       elem: 'old', // TODO: rename
+                       content: '50 000'
+                    },
+                    '28 000 рублей'
                 ]
             }
         },
@@ -475,12 +509,14 @@
                         {
                             block: 'input',
                             name: 'name',
-                            val: 'Имя'
+                            mods: { styled: 'yes' },
+                            placeholder: 'Имя'
                         },
                         {
                             block: 'input',
                             name: 'phone',
-                            val: 'Телефон'
+                            mods: { styled: 'yes' },
+                            placeholder: 'Телефон'
                         },
                         {
                             elem: 'hint',

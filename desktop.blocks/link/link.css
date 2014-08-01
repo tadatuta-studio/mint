@@ -6,3 +6,7 @@
 {
     text-decoration: underline;
 }
+.link:focus
+{
+    outline: none;
+}

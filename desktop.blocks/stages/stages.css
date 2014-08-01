@@ -2,5 +2,7 @@
     /*width: 1000px;*/
     margin: auto;
     position: relative;
+    counter-reset: li;
+    list-style: none;
 }
 

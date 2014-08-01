@@ -1,5 +1,5 @@
 block stages {
     elem inner {
-        tag: 'ul'
+        tag: 'ol'
     }
 }
