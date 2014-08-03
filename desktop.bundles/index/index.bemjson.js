@@ -12,14 +12,9 @@
     content: [
         {
             block: 'header',
-            mix: [
-                {
-                    block: 'clearfix'
-                },
-                {
-                    block: 'inner'
-                }
-            ],
+            mix: {
+                block: 'clearfix'
+            },
             content: [
                 {
                     block: 'logo',
@@ -95,14 +90,9 @@
         },
         {
             block: 'first-screen',
-            mix: [
-                {
-                    block: 'clearfix'
-                },
-                {
-                    block: 'inner'
-                }
-            ],
+            mix: {
+                block: 'clearfix'
+            },
             content: [
                 {
                     block: 'slide-show',
@@ -158,68 +148,70 @@
         },
         {
             block: 'action',
-            mix: [
-                {
+            mix: {
                     block: 'clearfix'
                 },
-                {
-                    block: 'inner'
-                }
-            ],
             content: [
                 {
-                    elem: 'text',
+                    elem: 'inner',
+                    mix: { block: 'clearfix' },
                     content: [
+
                         {
-                            tag: 'p',
-                            content: [
-                                'Исследование вашего товара и услуги.<br>',
-                                'Настройка рекламной кампании.<br>',
-                                'Создание посадочной страницы'
-                            ]
-                        },
-                        {
-                            tag: 'p',
-                            content: [
-                                'Всего от ',
-                                {
-                                    elem: 'old', // TODO: rename
-                                    content: '50 000'
-                                },
-                                '28 000 рублей!'
-                            ]
-                        }
-                    ]
-                },
-                {
-                    block: 'duration',
-                    content: [
-                        {
-                            block: 'timer',
+                            elem: 'text',
                             content: [
                                 {
-                                    elem: 'item',
-                                    mix:{ block: 'days'},
-                                    content: '00'
+                                    tag: 'p',
+                                    content: [
+                                        'Исследование вашего товара и услуги.<br>',
+                                        'Настройка рекламной кампании.<br>',
+                                        'Создание посадочной страницы'
+                                    ]
                                 },
-                                ' : ',
                                 {
-                                    elem: 'item',
-                                    mix:{ block: 'hours'},
-                                    content: '00'
-                                },
-                                ' : ',
-                                {
-                                    elem: 'item',
-                                    mix:{ block: 'minutes'},
-                                    content: '00'
+                                    tag: 'p',
+                                    content: [
+                                        'Всего от ',
+                                        {
+                                            elem: 'old', // TODO: rename
+                                            content: '50 000'
+                                        },
+                                        '28 000 рублей!'
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block: 'description',
-                            mods: { size: 'small', color: 'orange'},
-                            content: 'Предложение действует до 01. 07. 2014'
+                            block: 'duration',
+                            content: [
+                                {
+                                    block: 'timer',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            mix:{ block: 'days'},
+                                            content: '00'
+                                        },
+                                        ' : ',
+                                        {
+                                            elem: 'item',
+                                            mix:{ block: 'hours'},
+                                            content: '00'
+                                        },
+                                        ' : ',
+                                        {
+                                            elem: 'item',
+                                            mix:{ block: 'minutes'},
+                                            content: '00'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'description',
+                                    mods: { size: 'small', color: 'orange'},
+                                    content: 'Предложение действует до 01. 07. 2014'
+                                }
+                            ]
                         }
                     ]
                 }
@@ -462,24 +454,31 @@
         },
         {
             block: 'price',
-            content: {
-                elem: 'title',
-                content: [
-                    {
-                        block: 'link',
-                        attrs: { name: 'services' },
-                        content: ''
-                    },
-                    'Профессиональные лендинги<br>',
+            content: [
+                {
+                    elem: 'inner',
+                    content: [
+                        {
+                            elem: 'title',
+                            content: [
+                                {
+                                    block: 'link',
+                                    attrs: { name: 'services' },
+                                    content: ''
+                                },
+                                'Профессиональные лендинги<br>',
 
-                    'от ',
-                    {
-                       elem: 'old', // TODO: rename
-                       content: '50 000'
-                    },
-                    '28 000 рублей'
-                ]
-            }
+                                'от ',
+                                {
+                                   elem: 'old', // TODO: rename
+                                   content: '50 000'
+                                },
+                                '28 000 рублей'
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             block: 'contacts',
