@@ -17,8 +17,7 @@
             },
             content: [
                 {
-                    block: 'logo',
-                    content: 'mint'
+                    block: 'logo'
                 },
                 {
                     block: 'call-us',
@@ -122,25 +121,29 @@
                             mods: { level: 'two' },
                             content: 'Мы реально увеличиваем ваши продажи'
                         },
+                        // {
+                        //     block: 'form',
+                        //     content: [
+                        //         {
+                        //             block: 'input',
+                        //             name: 'name',
+                        //             placeholder: 'Имя'
+                        //         },
+                        //         {
+                        //             block: 'input',
+                        //             name: 'phone',
+                        //             placeholder: 'Телефон'
+                        //         },
+                        //         {
+                        //             block: 'button',
+                        //             mods: { size: 'big', color: 'green'},
+                        //             content: 'Заказать консультацию'
+                        //         }
+                        //     ]
+                        // },
                         {
-                            block: 'form',
-                            content: [
-                                {
-                                    block: 'input',
-                                    name: 'name',
-                                    placeholder: 'Имя'
-                                },
-                                {
-                                    block: 'input',
-                                    name: 'phone',
-                                    placeholder: 'Телефон'
-                                },
-                                {
-                                    block: 'button',
-                                    mods: { size: 'big', color: 'green'},
-                                    content: 'Заказать консультацию'
-                                }
-                            ]
+                            tag: 'script',
+                            attrs: { src: 'http://form.jotformeu.com/jsform/42164141627348' }
                         }
                     ]
                 }
@@ -496,7 +499,7 @@
                         },
                         {
                             block: 'description',
-                            mods: { size: 'medium', color: 'orange'},
+                            mods: { size: 'medium', color: 'pink'},
                             content: '+7 (495) 664-21-15'
                         }
                     ]
@@ -505,26 +508,30 @@
                     block: 'form',
                     mix: { block: 'contacts', elem: 'form' },
                     content: [
+                        // {
+                        //     block: 'input',
+                        //     name: 'name',
+                        //     mods: { styled: 'yes' },
+                        //     placeholder: 'Имя'
+                        // },
+                        // {
+                        //     block: 'input',
+                        //     name: 'phone',
+                        //     mods: { styled: 'yes' },
+                        //     placeholder: 'Телефон'
+                        // },
+                        // {
+                        //     elem: 'hint',
+                        //     content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
+                        // },
+                        // {
+                        //     block: 'button',
+                        //     mods: { size: 'big', color: 'pink'},
+                        //     content: 'Заказать консультацию'
+                        // }
                         {
-                            block: 'input',
-                            name: 'name',
-                            mods: { styled: 'yes' },
-                            placeholder: 'Имя'
-                        },
-                        {
-                            block: 'input',
-                            name: 'phone',
-                            mods: { styled: 'yes' },
-                            placeholder: 'Телефон'
-                        },
-                        {
-                            elem: 'hint',
-                            content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
-                        },
-                        {
-                            block: 'button',
-                            mods: { size: 'big', color: 'pink'},
-                            content: 'Заказать консультацию'
+                            tag: 'script',
+                            attrs: { src: 'http://form.jotformeu.com/jsform/42181924476358' }
                         }
                     ]
                 }

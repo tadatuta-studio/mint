@@ -1,5 +1,11 @@
-.portfolio {
+.portfolio
+{
     background: #021434;
     color: #fff;
     padding: 10px 100px 30px;
+}
+.portfolio__inner
+{
+    max-width: 1000px;
+    margin: auto;
 }
