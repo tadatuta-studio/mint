@@ -12,12 +12,19 @@
     content: [
         {
             block: 'header',
-            mix: {
-                block: 'clearfix'
-            },
             content: [
                 {
-                    block: 'logo'
+                    block: 'logo',
+                    content: [
+                        {
+                            elem: 'title',
+                            content: 'Mint'
+                        },
+                        {
+                            elem: 'slogan',
+                            content: 'интеллектуальный маркетинг'
+                        }
+                    ]
                 },
                 {
                     block: 'call-us',
@@ -32,9 +39,7 @@
                         },
                         {
                             block: 'button',
-                            mix: [
-                                { block: 'call-us', elem: 'button' }
-                            ],
+                            mix: { block: 'call-us', elem: 'button' },
                             mods: { size: 'small', color: 'orange'},
                             content: 'Заказать звонок'
                         }
@@ -89,18 +94,7 @@
         },
         {
             block: 'first-screen',
-            mix: {
-                block: 'clearfix'
-            },
             content: [
-                {
-                    block: 'slide-show',
-                    content: [
-                        {
-                            elem: 'paginator'
-                        }
-                    ]
-                },
                 {
                     block: 'sidebar',
                     content: [
@@ -121,29 +115,73 @@
                             mods: { level: 'two' },
                             content: 'Мы реально увеличиваем ваши продажи'
                         },
-                        // {
-                        //     block: 'form',
-                        //     content: [
-                        //         {
-                        //             block: 'input',
-                        //             name: 'name',
-                        //             placeholder: 'Имя'
-                        //         },
-                        //         {
-                        //             block: 'input',
-                        //             name: 'phone',
-                        //             placeholder: 'Телефон'
-                        //         },
-                        //         {
-                        //             block: 'button',
-                        //             mods: { size: 'big', color: 'green'},
-                        //             content: 'Заказать консультацию'
-                        //         }
-                        //     ]
-                        // },
                         {
-                            tag: 'script',
-                            attrs: { src: 'http://form.jotformeu.com/jsform/42164141627348' }
+                            block: 'form',
+                            content: [
+                                {
+                                    block: 'input',
+                                    name: 'name',
+                                    placeholder: 'Имя'
+                                },
+                                {
+                                    block: 'input',
+                                    name: 'phone',
+                                    placeholder: 'Телефон'
+                                },
+                                {
+                                    block: 'button',
+                                    mods: { size: 'big', color: 'green'},
+                                    content: 'Заказать консультацию'
+                                }
+                            ]
+                        },
+                        // {
+                        //     tag: 'script',
+                        //     attrs: { src: 'http://form.jotformeu.com/jsform/42164141627348' }
+                        // }
+                    ]
+                },
+                {
+                    block: 'carousel',
+                    mix: { block: 'first-screen', elem: 'carousel' },
+                    mods: { animate: 'yes' },
+                    content: [
+                        {
+                            elem: 'inner',
+                            content: [
+                                {
+                                    elem: 'item',
+                                    elemMods: { state: 'active' },
+                                    content: {
+                                        elem: 'img',
+                                        url: 'https://lh5.ggpht.com/sxYdNHOqblPwcd3fCR1sj5gzlib4sy2sl1btHdwA28WVPDxyj6hpXoOT-a4fz4nzKwnX'
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    content: {
+                                        elem: 'img',
+                                        url: 'https://lh5.ggpht.com/s7830ZGWwOtA2CTApJk0ZvWny7zIbuXaOe5GlqPkknGktUmh9LBM0ojT-tjy-0dp1gM'
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    content: {
+                                        elem: 'img',
+                                        url: 'https://lh6.ggpht.com/Ar_0ImGRpXy7F1QlXWQmsT6IjKPzqC8uQ9n8JgefpZzZsUK_Xpz2sL8SyFGwVJR37YTH'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'control',
+                            elemMods: { type: 'left', theme: 'default' },
+                            content: '&lsaquo;'
+                        },
+                        {
+                            elem: 'control',
+                            elemMods: { type: 'right', theme: 'default' },
+                            content: '&rsaquo;'
                         }
                     ]
                 }
@@ -357,9 +395,7 @@
         },
         {
             block: 'portfolio',
-            mix: {
-                    block: 'clearfix'
-                },
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'heading',
@@ -374,30 +410,61 @@
                     ]
                 },
                 {
-                    block: 'slide-show',
+                    block: 'carousel',
+                    mods: { animate: 'yes' },
                     content: [
                         {
-                            elem: 'slide',
+                            elem: 'inner',
                             content: [
                                 {
-                                    elem: 'image',
-                                    url: 'http://tadatuta.ru',
-                                    alt: 'я то что будет если не подгрузится картинка',
-                                    title: 'я то что покажется по наведению мыши'
+                                    elem: 'item',
+                                    elemMods: { state: 'active' },
+                                    content: [
+                                        {
+                                            elem: 'image',
+                                            url: 'http://tadatuta.ru',
+                                            alt: 'я то что будет если не подгрузится картинка',
+                                            title: 'я то что покажется по наведению мыши'
+                                        },
+                                        {
+                                            elem: 'description',
+                                            content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                        },
+                                        {
+                                            elem: 'price',
+                                            content: 'От 28 000 рублей'
+                                        },
+                                        {
+                                            elem: 'result',
+                                            content: 'Проект окупился через 10 дней после запуска'
+                                        }
+                                    ]
                                 },
                                 {
-                                    elem: 'description',
-                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                    elem: 'item',
+                                    content: {
+                                        elem: 'img',
+                                        url: 'https://lh5.ggpht.com/s7830ZGWwOtA2CTApJk0ZvWny7zIbuXaOe5GlqPkknGktUmh9LBM0ojT-tjy-0dp1gM'
+                                    }
                                 },
                                 {
-                                    elem: 'price',
-                                    content: 'От 28 000 рублей'
-                                },
-                                {
-                                    elem: 'result',
-                                    content: 'Проект окупился через 10 дней после запуска'
+                                    elem: 'item',
+                                    content: {
+                                        elem: 'img',
+                                        url: 'https://lh6.ggpht.com/Ar_0ImGRpXy7F1QlXWQmsT6IjKPzqC8uQ9n8JgefpZzZsUK_Xpz2sL8SyFGwVJR37YTH'
+                                    }
                                 }
                             ]
+                        },
+                        {
+                            elem: 'control',
+                            elemMods: { type: 'left', theme: 'default' },
+                            content: '&lsaquo;'
+                        },
+                        {
+                            elem: 'control',
+                            elemMods: { type: 'right', theme: 'default' },
+                            content: '&rsaquo;'
                         }
                     ]
                 }
@@ -415,7 +482,7 @@
                             attrs: { name: 'why-we' },
                             content: ''
                         },
-                        'Наша студия - лучший выбор для увеличения ваших продаж'
+                        'Наша студия — лучший выбор для увеличения ваших продаж'
                     ]
                 },
                 {
@@ -508,31 +575,31 @@
                     block: 'form',
                     mix: { block: 'contacts', elem: 'form' },
                     content: [
-                        // {
-                        //     block: 'input',
-                        //     name: 'name',
-                        //     mods: { styled: 'yes' },
-                        //     placeholder: 'Имя'
-                        // },
-                        // {
-                        //     block: 'input',
-                        //     name: 'phone',
-                        //     mods: { styled: 'yes' },
-                        //     placeholder: 'Телефон'
-                        // },
-                        // {
-                        //     elem: 'hint',
-                        //     content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
-                        // },
-                        // {
-                        //     block: 'button',
-                        //     mods: { size: 'big', color: 'pink'},
-                        //     content: 'Заказать консультацию'
-                        // }
                         {
-                            tag: 'script',
-                            attrs: { src: 'http://form.jotformeu.com/jsform/42181924476358' }
+                            block: 'input',
+                            name: 'name',
+                            mods: { styled: 'yes' },
+                            placeholder: 'Имя'
+                        },
+                        {
+                            block: 'input',
+                            name: 'phone',
+                            mods: { styled: 'yes' },
+                            placeholder: 'Телефон'
+                        },
+                        {
+                            elem: 'hint',
+                            content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
+                        },
+                        {
+                            block: 'button',
+                            mods: { size: 'big', color: 'pink'},
+                            content: 'Заказать консультацию'
                         }
+                        // {
+                        //     tag: 'script',
+                        //     attrs: { src: 'http://form.jotformeu.com/jsform/42181924476358' }
+                        // }
                     ]
                 }
             ]

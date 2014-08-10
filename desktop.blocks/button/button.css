@@ -5,20 +5,22 @@
     color: #fff;
     width: 100%;
     cursor: pointer;
-    -webkit-transition:background .2s linear;
-       -moz-transition:background .2s linear;
-        -ms-transition:background .2s linear;
-         -o-transition:background .2s linear;
-            transition:background .2s linear;
+    -webkit-transition: background .2s linear;
+       -moz-transition: background .2s linear;
+        -ms-transition: background .2s linear;
+         -o-transition: background .2s linear;
+            transition: background .2s linear;
 
 }
+
 .button:focus
 {
     outline: none;
 }
+
 .button:active
 {
     -webkit-box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
-    -moz-box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
-    box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
+       -moz-box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
+            box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
 }

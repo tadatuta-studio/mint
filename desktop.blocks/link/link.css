@@ -2,11 +2,8 @@
     color: #e54271;
     text-decoration: none;
 }
+
 .link:hover
 {
     text-decoration: underline;
-}
-.link:focus
-{
-    outline: none;
 }

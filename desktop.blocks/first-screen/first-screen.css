@@ -1,12 +1,19 @@
 .first-screen {
     background: #e5e5e5;
 }
+
 .first-screen__inner
 {
     max-width: 1000px;
     margin: auto;
 }
+
 .first-screen .form-all
 {
     width: auto;
+}
+
+.first-screen__carousel
+{
+    width: 600px;
 }

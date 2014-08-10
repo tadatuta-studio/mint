@@ -1,3 +1,6 @@
-block heading {
-    tag: { return 'h' + (this.ctx.mods && this.ctx.mods.level ? this.ctx.mods.level : 1) }
-}
+block('heading').tag()(function() {
+    var mods = this.ctx.mods,
+        level = mods && mods.level;
+
+    return 'h' + (level || 1);
+});

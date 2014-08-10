@@ -5,10 +5,12 @@
     white-space: normal;
     width: 300px;
 }
+
 .order__description
 {
     font-size: 18px;
 }
+
 .order__or
 {
     font-size: 21px;

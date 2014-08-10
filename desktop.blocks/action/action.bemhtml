@@ -1,5 +1,1 @@
-block action {
-    elem old {
-        tag: 'span'
-    }
-}
+block('action').elem('old').tag()('span');

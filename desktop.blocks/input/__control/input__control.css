@@ -6,14 +6,17 @@
     font-size: 14px;
     padding-left: 10px;
 }
+
 .input:first-child .input__control
 {
     margin-bottom: 20px;
 }
+
 input::-webkit-input-placeholder
 {
     color: #1bcb88;
 }
+
 input:-moz-placeholder
 {
     color: #1bcb88;

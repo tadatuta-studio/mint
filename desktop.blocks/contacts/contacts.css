@@ -1,9 +1,11 @@
-.contacts__inner {
+.contacts__inner
+{
     width: 770px;
     margin: 30px auto;
     padding: 30px 100px;
     white-space: nowrap;
 }
+
 .contacts__form
 {
     white-space: normal;

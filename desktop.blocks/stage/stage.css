@@ -8,11 +8,13 @@
     margin-bottom: 50px;
     position: relative;
 }
+
 .stage__title
 {
     font-size: 20px;
     margin: 10px 0;
 }
+
 .stage:after
 {
     position: absolute;
@@ -27,6 +29,7 @@
     top: 135px;
     padding-top: 10px;
 }
+
 .stage:last-child:after
 {
     display: none;

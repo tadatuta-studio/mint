@@ -1,5 +1,1 @@
-block timer {
-    elem item {
-        tag: 'span'
-    }
-}
+block('timer').elem('item').tag()('span');

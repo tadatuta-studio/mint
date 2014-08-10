@@ -44,6 +44,7 @@ MAKE.decl('BundleNode', {
                 'libs/bem-components/desktop.blocks',
                 'libs/bem-components/design/common.blocks',
                 'libs/bem-components/design/desktop.blocks',
+                'libs/bl-carousel/desktop.blocks',
                 'common.blocks',
                 'desktop.blocks'
             ]

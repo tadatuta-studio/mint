@@ -1,5 +1,1 @@
-block price {
-    elem old {
-        tag: 'span'
-    }
-}
+block('price').elem('old').tag()('span');

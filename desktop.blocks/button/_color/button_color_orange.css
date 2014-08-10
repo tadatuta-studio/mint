@@ -1,8 +1,9 @@
 .button_color_orange
 {
-    background: #FC3307;
+    background: #fc3307;
 }
+
 .button_color_orange:hover
 {
-    background: #AF1309;
+    background: #af1309;
 }

@@ -1,5 +1,1 @@
-block stages {
-    elem inner {
-        tag: 'ol'
-    }
-}
+block('stages').elem('inner').tag()('ol');

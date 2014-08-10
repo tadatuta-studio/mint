@@ -1,6 +1,7 @@
-.logo {
+.logo
+{
     float: left;
-    background: url("/i/logo.png") no-repeat;
+    background: url(/i/logo.png) no-repeat;
     width: 125px;
     height: 90px;
     margin-right: 25px;

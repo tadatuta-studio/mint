@@ -1,4 +1,7 @@
-block('header').content()({
-    elem: 'inner',
-    content: applyNext()
-});
+block('header')(
+    mix()({ block: 'clearfix' }),
+    content()({
+        elem: 'inner',
+        content: applyNext()
+    })
+);

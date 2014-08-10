@@ -1,4 +1,7 @@
-block('first-screen').content()({
-    elem: 'inner',
-    content: applyNext()
-});
+block('first-screen')(
+    mix()({ block: 'clearfix' }),
+    content()({
+        elem: 'inner',
+        content: applyNext()
+    })
+);
