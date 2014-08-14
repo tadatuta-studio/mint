@@ -1,12 +1,12 @@
 .timer
 {
-    font-size: 49px;
+    font-size: 48.59px;
     margin-bottom: 20px;
 }
 
 .timer__item
 {
     background: #fc005e;
-    padding: 10px 20px;
+    padding: 0px 23px;
     display: inline-block;
 }

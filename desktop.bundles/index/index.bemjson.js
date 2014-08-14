@@ -131,7 +131,7 @@
                                 {
                                     block: 'button',
                                     mods: { size: 'big', color: 'green'},
-                                    content: 'Заказать консультацию'
+                                    content: 'Бесплатная консультация'
                                 }
                             ]
                         },
@@ -140,51 +140,51 @@
                         //     attrs: { src: 'http://form.jotformeu.com/jsform/42164141627348' }
                         // }
                     ]
-                },
-                {
-                    block: 'carousel',
-                    mix: { block: 'first-screen', elem: 'carousel' },
-                    mods: { animate: 'yes' },
-                    content: [
-                        {
-                            elem: 'inner',
-                            content: [
-                                {
-                                    elem: 'item',
-                                    elemMods: { state: 'active' },
-                                    content: {
-                                        elem: 'img',
-                                        url: 'https://lh5.ggpht.com/sxYdNHOqblPwcd3fCR1sj5gzlib4sy2sl1btHdwA28WVPDxyj6hpXoOT-a4fz4nzKwnX'
-                                    }
-                                },
-                                {
-                                    elem: 'item',
-                                    content: {
-                                        elem: 'img',
-                                        url: 'https://lh5.ggpht.com/s7830ZGWwOtA2CTApJk0ZvWny7zIbuXaOe5GlqPkknGktUmh9LBM0ojT-tjy-0dp1gM'
-                                    }
-                                },
-                                {
-                                    elem: 'item',
-                                    content: {
-                                        elem: 'img',
-                                        url: 'https://lh6.ggpht.com/Ar_0ImGRpXy7F1QlXWQmsT6IjKPzqC8uQ9n8JgefpZzZsUK_Xpz2sL8SyFGwVJR37YTH'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'control',
-                            elemMods: { type: 'left', theme: 'default' },
-                            content: '&lsaquo;'
-                        },
-                        {
-                            elem: 'control',
-                            elemMods: { type: 'right', theme: 'default' },
-                            content: '&rsaquo;'
-                        }
-                    ]
                 }
+                // {
+                //     block: 'carousel',
+                //     mix: { block: 'first-screen', elem: 'carousel' },
+                //     mods: { animate: 'yes' },
+                //     content: [
+                //         {
+                //             elem: 'inner',
+                //             content: [
+                //                 {
+                //                     elem: 'item',
+                //                     elemMods: { state: 'active' },
+                //                     content: {
+                //                         elem: 'img',
+                //                         url: 'https://lh5.ggpht.com/sxYdNHOqblPwcd3fCR1sj5gzlib4sy2sl1btHdwA28WVPDxyj6hpXoOT-a4fz4nzKwnX'
+                //                     }
+                //                 },
+                //                 {
+                //                     elem: 'item',
+                //                     content: {
+                //                         elem: 'img',
+                //                         url: 'https://lh5.ggpht.com/s7830ZGWwOtA2CTApJk0ZvWny7zIbuXaOe5GlqPkknGktUmh9LBM0ojT-tjy-0dp1gM'
+                //                     }
+                //                 },
+                //                 {
+                //                     elem: 'item',
+                //                     content: {
+                //                         elem: 'img',
+                //                         url: 'https://lh6.ggpht.com/Ar_0ImGRpXy7F1QlXWQmsT6IjKPzqC8uQ9n8JgefpZzZsUK_Xpz2sL8SyFGwVJR37YTH'
+                //                     }
+                //                 }
+                //             ]
+                //         },
+                //         {
+                //             elem: 'control',
+                //             elemMods: { type: 'left', theme: 'default' },
+                //             content: '&lsaquo;'
+                //         },
+                //         {
+                //             elem: 'control',
+                //             elemMods: { type: 'right', theme: 'default' },
+                //             content: '&rsaquo;'
+                //         }
+                //     ]
+                // }
             ]
         },
         {
@@ -418,53 +418,157 @@
                             content: [
                                 {
                                     elem: 'item',
+                                    mix: { block: 'clearfix' },
                                     elemMods: { state: 'active' },
                                     content: [
                                         {
-                                            elem: 'image',
-                                            url: 'http://tadatuta.ru',
+                                            elem: 'img',
+                                            url: '/i/slide_image_one.png',
                                             alt: 'я то что будет если не подгрузится картинка',
                                             title: 'я то что покажется по наведению мыши'
                                         },
                                         {
-                                            elem: 'description',
-                                            content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
-                                        },
-                                        {
-                                            elem: 'price',
-                                            content: 'От 28 000 рублей'
-                                        },
-                                        {
-                                            elem: 'result',
-                                            content: 'Проект окупился через 10 дней после запуска'
+                                            elem: 'summary',
+                                            content: [
+                                                {
+                                                    elem: 'description',
+                                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                                },
+                                                {
+                                                    elem: 'price',
+                                                    content: 'От 28 000 рублей'
+                                                },
+                                                {
+                                                    elem: 'result',
+                                                    content: 'Проект окупился через 10 дней после запуска'
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
                                 {
                                     elem: 'item',
-                                    content: {
-                                        elem: 'img',
-                                        url: 'https://lh5.ggpht.com/s7830ZGWwOtA2CTApJk0ZvWny7zIbuXaOe5GlqPkknGktUmh9LBM0ojT-tjy-0dp1gM'
-                                    }
+                                    content: [
+                                        {
+                                            elem: 'img',
+                                            url: '/i/slide_image_two.png',
+                                            alt: 'я то что будет если не подгрузится картинка',
+                                            title: 'я то что покажется по наведению мыши'
+                                        },
+                                        {
+                                            elem: 'summary',
+                                            content: [
+                                                {
+                                                    elem: 'description',
+                                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                                },
+                                                {
+                                                    elem: 'price',
+                                                    content: 'От 28 000 рублей'
+                                                },
+                                                {
+                                                    elem: 'result',
+                                                    content: 'Проект окупился через 10 дней после запуска'
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
                                     elem: 'item',
-                                    content: {
-                                        elem: 'img',
-                                        url: 'https://lh6.ggpht.com/Ar_0ImGRpXy7F1QlXWQmsT6IjKPzqC8uQ9n8JgefpZzZsUK_Xpz2sL8SyFGwVJR37YTH'
-                                    }
+                                    content: [
+                                        {
+                                            elem: 'img',
+                                            url: '/i/slide_image_three.png',
+                                            alt: 'я то что будет если не подгрузится картинка',
+                                            title: 'я то что покажется по наведению мыши'
+                                        },
+                                        {
+                                            elem: 'summary',
+                                            content: [
+                                                {
+                                                    elem: 'description',
+                                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                                },
+                                                {
+                                                    elem: 'price',
+                                                    content: 'От 28 000 рублей'
+                                                },
+                                                {
+                                                    elem: 'result',
+                                                    content: 'Проект окупился через 10 дней после запуска'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'img',
+                                            url: '/i/slide_image_four.png',
+                                            alt: 'я то что будет если не подгрузится картинка',
+                                            title: 'я то что покажется по наведению мыши'
+                                        },
+                                        {
+                                            elem: 'summary',
+                                            content: [
+                                                {
+                                                    elem: 'description',
+                                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                                },
+                                                {
+                                                    elem: 'price',
+                                                    content: 'От 28 000 рублей'
+                                                },
+                                                {
+                                                    elem: 'result',
+                                                    content: 'Проект окупился через 10 дней после запуска'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'img',
+                                            url: '/i/slide_image_five.png',
+                                            alt: 'я то что будет если не подгрузится картинка',
+                                            title: 'я то что покажется по наведению мыши'
+                                        },
+                                        {
+                                            elem: 'summary',
+                                            content: [
+                                                {
+                                                    elem: 'description',
+                                                    content: 'Решая задачу по созданию и увеличению продаж для этого агенства конверсия была увеличена до 20%, а продажи выросли на 150%. Бюджет на рекламу остался прежний.'
+                                                },
+                                                {
+                                                    elem: 'price',
+                                                    content: 'От 28 000 рублей'
+                                                },
+                                                {
+                                                    elem: 'result',
+                                                    content: 'Проект окупился через 10 дней после запуска'
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
                             elem: 'control',
-                            elemMods: { type: 'left', theme: 'default' },
-                            content: '&lsaquo;'
+                            elemMods: { type: 'left', theme: 'mini' },
+                            content: ''
                         },
                         {
                             elem: 'control',
-                            elemMods: { type: 'right', theme: 'default' },
-                            content: '&rsaquo;'
+                            elemMods: { type: 'right', theme: 'mini' },
+                            content: ''
                         }
                     ]
                 }
@@ -594,7 +698,7 @@
                         {
                             block: 'button',
                             mods: { size: 'big', color: 'pink'},
-                            content: 'Заказать консультацию'
+                            content: 'Бесплатная консультация'
                         }
                         // {
                         //     tag: 'script',
