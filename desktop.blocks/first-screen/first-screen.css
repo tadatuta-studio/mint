@@ -1,5 +1,7 @@
-.first-screen {
-    background: #e5e5e5;
+.first-screen
+{
+    background: -webkit-linear-gradient(left, #E1E1E1, #9A9A9A);
+    background: linear-gradient(to right, #E1E1E1, #9A9A9A);
 }
 
 .first-screen__inner
