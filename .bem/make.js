@@ -75,8 +75,8 @@ MAKE.decl('AutoprefixerNode', {
     getBrowsers : function() {
         return [
             'last 2 versions',
-            'ie 10',
-            'ff 24',
+            'ie 9',
+            'ff 30',
             'opera 12.16'
         ];
     }

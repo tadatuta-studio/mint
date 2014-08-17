@@ -1,10 +1,10 @@
 {
-  "author": "",
-  "name": "bem-project-stub",
+  "author": "tadatuta studio",
+  "name": "mint",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem/project-stub.git"
+    "url": "git://github.com/tadatuta-studio/mint"
   },
   "engines": {
     "node": ">=0.10"
@@ -13,15 +13,14 @@
     "bem-environ": "~1.4.0"
   },
   "devDependencies": {
-    "bem": "0.8.1",
+    "bem": "~0.9.0",
     "bem-tools-autoprefixer": "0.0.3",
-    "bower": "~1.3.5",
     "bower-npm-install": "~0.5.4",
     "stylus": "^0.47.1"
   },
   "scripts": {
     "postinstall": "bower-npm-install --non-interactive",
-    "deps": "bower-npm-install --non-interactive"
+    "deps": "bower-npm-install"
   },
   "private": true
 }

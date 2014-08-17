@@ -1,8 +1,8 @@
 {
-  "name": "bem-project-stub",
+  "name": "mint",
   "version": "1.0.0",
-  "description": "BEM project stub",
-  "bugs": "https://github.com/bem/project-stub/issues",
+  "description": "mint",
+  "bugs": "https://github.com/tadatuta-studio/mint/issues",
   "ignore": [
     ".bem/cache",
     "node_modules",

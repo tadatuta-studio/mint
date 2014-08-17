@@ -10,3 +10,79 @@
     max-width: 1000px;
     margin: auto;
 }
+
+.portfolio .carousel
+{
+    padding: 0 40px;
+}
+
+.portfolio .carousel__img
+{
+    width: 530px;
+    float: left;
+}
+
+.portfolio .carousel__summary
+{
+    float: left;
+    width: 365px;
+    margin-left: 10px;
+}
+
+.portfolio .carousel__control
+{
+    left: 10px;
+    top: 50%;
+}
+
+.portfolio .carousel__control_type_right
+{
+    right: 10px;
+    left: auto;
+}
+
+.portfolio .carousel__control
+{
+    border-radius: 0;
+    opacity: 1;
+}
+
+.portfolio .carousel__control_type_right
+{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #fc005e;
+    border-bottom: 10px solid transparent;
+}
+
+.portfolio .carousel__control_type_right:hover
+{
+    border-left-color: #a60034;
+}
+
+.portfolio .carousel__control_type_left
+{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #fc005e;
+    border-bottom: 10px solid transparent;
+}
+
+.portfolio .carousel__control_type_left:hover
+{
+    border-right-color: #a60034;
+}
+
+.portfolio .carousel__result
+{
+    font-size: 17px;
+    color: #fc005e;
+}
+
+.portfolio .carousel__price
+{
+    font-size: 17px;
+    color: #1bcb88;
+}

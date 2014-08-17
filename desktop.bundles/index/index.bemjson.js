@@ -126,17 +126,10 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            elem: 'paginator'
                         }
-                        // {
-                        //     elem: 'control',
-                        //     elemMods: { type: 'left', theme: 'mini' },
-                        //     content: ''
-                        // },
-                        // {
-                        //     elem: 'control',
-                        //     elemMods: { type: 'right', theme: 'mini' },
-                        //     content: ''
-                        // }
                     ]
                 },
                 {
@@ -175,7 +168,7 @@
                                 {
                                     block: 'button',
                                     mods: { size: 'big', color: 'green'},
-                                    content: 'Бесплатная консультация'
+                                    content: 'Заказать консультацию'
                                 }
                             ]
                         },

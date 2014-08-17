@@ -1,13 +1,4 @@
-# Stub to start a new [BEM](http://bem.info) project
-
-Project-stub is a template project repository used for BEM projects creation. It contains the minimal configuration files and folders you will need for quick start from scratch. 
-
-There are two main BEM libraries are linked here by default:
-
-* [bem-core](https://github.com/bem/bem-core)  
-* [bem-components](https://github.com/bem/bem-components)
-
-Just try and taste BEM!
+# Mint
 
 ## Installation requirements
 
@@ -26,7 +17,7 @@ It's as easy as...
 ## Usage
 
 Now you can run any bem-tools commands from a `./node_modules/bem/bin/bem` directory.
-To be able to run bem-tools commands without typing a full path to an executable file (node_modules/bem/bin/bem), use bem-cli npm package: 
+To be able to run bem-tools commands without typing a full path to an executable file (node_modules/bem/bin/bem), use bem-cli npm package:
 
 `npm install -g bem-cli` or use an alternative method `export PATH=./node_modules/.bin:$PATH`
 

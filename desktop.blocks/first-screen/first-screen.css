@@ -1,7 +1,6 @@
 .first-screen
 {
-    background: -webkit-linear-gradient(left, #E1E1E1, #9A9A9A);
-    background: linear-gradient(to right, #E1E1E1, #9A9A9A);
+    background: linear-gradient(to right, #e1e1e1, #9a9a9a);
 }
 
 .first-screen__inner
@@ -17,5 +16,6 @@
 
 .first-screen__carousel
 {
+    float: left;
     width: 600px;
 }
