@@ -17,11 +17,7 @@
 .carousel.first-screen__carousel
 {
     float: left;
-    width: 600px;
+    width: 720px;
     margin-top: -97px;
     margin-left: -44px;
-}
-.first-screen__carousel .carousel__img
-{
-	width: 120%;
 }
