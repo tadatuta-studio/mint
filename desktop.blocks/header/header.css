@@ -1,6 +1,8 @@
 .header {
-    background: #efefef;
+    background: rgba( 239,239,239,.9);
     color: #e54271;
+    position: relative;
+    z-index: 2;
 }
 
 .header__inner {

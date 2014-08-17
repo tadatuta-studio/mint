@@ -1,7 +1,7 @@
 .input__control
 {
     width: 265px;
-    height: 35px;
+    height: 32px;
     color: #1bcb88;
     font-size: 14px;
     padding-left: 10px;
@@ -9,7 +9,7 @@
 
 .input:first-child .input__control
 {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 
 input::-webkit-input-placeholder

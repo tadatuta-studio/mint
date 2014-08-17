@@ -4,6 +4,7 @@
     vertical-align: top;
     white-space: normal;
     width: 295px;
+    margin-left: 38px;
 }
 
 .order__description
@@ -15,5 +16,5 @@
 {
     font-size: 21px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }

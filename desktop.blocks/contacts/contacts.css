@@ -1,7 +1,7 @@
 .contacts__inner
 {
     width: 770px;
-    margin: 30px auto;
+    margin: 15px auto;
     padding: 30px 100px;
     white-space: nowrap;
 }
@@ -12,5 +12,9 @@
     display: inline-block;
     vertical-align: top;
     width: 280px;
-    margin-left: 225px;
+    margin-left: 150px;
+}
+.contacts .input:first-child .input__control 
+{
+	margin-bottom: 15px;
 }

@@ -5,4 +5,18 @@
     width: 125px;
     height: 90px;
     margin-right: 25px;
+    position: relative;
+}
+.logo__slogan 
+{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 12px;
+    color: #fff;
+}
+.logo__title 
+{
+    text-indent: -800px;
+    overflow: hidden;
 }

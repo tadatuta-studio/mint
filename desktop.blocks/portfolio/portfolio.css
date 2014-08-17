@@ -2,7 +2,7 @@
 {
     background: #021434;
     color: #fff;
-    padding: 1px 0 60px 0;
+    padding: 1px 0 75px 0;
 }
 
 .portfolio__inner
@@ -13,7 +13,7 @@
 
 .portfolio .carousel
 {
-    padding: 0 40px;
+    /*padding: 0 40px;*/
 }
 
 .portfolio .carousel__img
@@ -25,14 +25,14 @@
 .portfolio .carousel__summary
 {
     float: left;
-    width: 365px;
-    margin-left: 10px;
+    width: 395px;
+    margin-left: 15px;
 }
 
 .portfolio .carousel__control
 {
     left: 10px;
-    top: 50%;
+    top: 54%;
 }
 
 .portfolio .carousel__control_type_right
@@ -51,9 +51,9 @@
 {
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-left: 20px solid #fc005e;
-    border-bottom: 10px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 19px solid #fc005e;
+    border-bottom: 8px solid transparent;
 }
 
 .portfolio .carousel__control_type_right:hover
@@ -65,9 +65,10 @@
 {
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-right: 20px solid #fc005e;
-    border-bottom: 10px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: 19px solid #fc005e;
+    border-bottom: 8px solid transparent;
+    margin-left: -35px;
 }
 
 .portfolio .carousel__control_type_left:hover

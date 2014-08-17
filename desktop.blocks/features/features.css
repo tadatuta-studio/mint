@@ -1,4 +1,8 @@
 .features__inner {
     width: 1000px;
-    margin: auto;
+    margin: 62px auto 0;
+}
+.features .heading_level_4
+{
+	margin-bottom: 60px;
 }

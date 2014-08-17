@@ -1,5 +1,9 @@
 .sidebar {
     float: right;
-    padding-top: 109px;
+    padding-top: 100px;
     width: 280px;
+}
+.sidebar .form 
+{
+	margin-top: 20px;
 }

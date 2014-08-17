@@ -38,9 +38,12 @@
                             content: 'Круглосуточно, без выходных'
                         },
                         {
-                            block: 'button',
-                            mix: { block: 'call-us', elem: 'button' },
-                            mods: { size: 'small', color: 'orange'},
+                            block: 'link',
+                            url: '#order',
+                            mix: [
+                                { block: 'call-us', elem: 'button' },
+                                { block: 'button', mods: { size: 'small', color: 'orange'}}
+                            ],
                             content: 'Заказать звонок'
                         }
                     ]
@@ -135,6 +138,11 @@
                 {
                     block: 'sidebar',
                     content: [
+                        {
+                            block: 'link',
+                            attrs: { name: 'order' },
+                            content: ''
+                        },
                         {
                             block: 'slogan',
                             mods: { level: 'one' },
@@ -572,7 +580,7 @@
             content: [
                 {
                     block: 'heading',
-                    mods: { level: '3', color: 'green' },
+                    mods: { level: '4', color: 'green' },
                     content: [
                         {
                             block: 'link',
