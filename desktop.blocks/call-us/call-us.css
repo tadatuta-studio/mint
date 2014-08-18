@@ -3,7 +3,9 @@
     padding-top: 12px;
     text-align: right;
 }
-.call-us .button
+.button.call-us__button
 {
-	width: 95%;
+	width: auto;
+	text-decoration: none;
+	margin-top: 5px;
 }

@@ -38,12 +38,10 @@
                             content: 'Круглосуточно, без выходных'
                         },
                         {
-                            block: 'link',
+                            block: 'button',
                             url: '#order',
-                            mix: [
-                                { block: 'call-us', elem: 'button' },
-                                { block: 'button', mods: { size: 'small', color: 'orange'}}
-                            ],
+                            mods: { size: 'small', color: 'orange', type: 'link'},
+                            mix: { block: 'call-us', elem: 'button' },
                             content: 'Заказать звонок'
                         }
                     ]
@@ -140,8 +138,7 @@
                     content: [
                         {
                             block: 'link',
-                            attrs: { name: 'order' },
-                            content: ''
+                            attrs: { name: 'order' }
                         },
                         {
                             block: 'slogan',
@@ -149,8 +146,7 @@
                             content: [
                                 {
                                     block: 'link',
-                                    attrs: { name: 'about' },
-                                    content: ''
+                                    attrs: { name: 'about' }
                                 },
                                 'Landing page и контекстаня реклама для вашего бизнеса с гарантией прибыли'
                             ]
@@ -268,8 +264,7 @@
                     content: [
                         {
                             block: 'link',
-                            attrs: { name: 'how' },
-                            content: ''
+                            attrs: { name: 'how' }
                         },
                         'Как мы увеличиваем продажи'
                     ]
@@ -404,8 +399,7 @@
                     content: [
                         {
                             block: 'link',
-                            attrs: { name: 'result' },
-                            content: ''
+                            attrs: { name: 'result' }
                         },
                         'Результат нашей работы'
                     ]
@@ -563,13 +557,11 @@
                         },
                         {
                             elem: 'control',
-                            elemMods: { type: 'left', theme: 'mini' },
-                            content: ''
+                            elemMods: { type: 'left', theme: 'mini' }
                         },
                         {
                             elem: 'control',
-                            elemMods: { type: 'right', theme: 'mini' },
-                            content: ''
+                            elemMods: { type: 'right', theme: 'mini' }
                         }
                     ]
                 }
@@ -584,8 +576,7 @@
                     content: [
                         {
                             block: 'link',
-                            attrs: { name: 'why-we' },
-                            content: ''
+                            attrs: { name: 'why-we' }
                         },
                         'Наша студия — лучший выбор для увеличения ваших продаж'
                     ]
@@ -638,8 +629,7 @@
                             content: [
                                 {
                                     block: 'link',
-                                    attrs: { name: 'services' },
-                                    content: ''
+                                    attrs: { name: 'services' }
                                 },
                                 'Профессиональные лендинги<br>',
 
