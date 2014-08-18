@@ -109,21 +109,21 @@
                                     elemMods: { state: 'active' },
                                     content: {
                                         elem: 'img',
-                                        url: '/i/first-screen-slider_one.png'
+                                        url: 'i/first-screen-slider_one.png'
                                     }
                                 },
                                 {
                                     elem: 'item',
                                     content: {
                                         elem: 'img',
-                                        url: '/i/first-screen-slider_two.png'
+                                        url: 'i/first-screen-slider_two.png'
                                     }
                                 },
                                 {
                                     elem: 'item',
                                     content: {
                                         elem: 'img',
-                                        url: '/i/first-screen-slider_three.png'
+                                        url: 'i/first-screen-slider_three.png'
                                     }
                                 }
                             ]
@@ -418,7 +418,7 @@
                                     content: [
                                         {
                                             elem: 'img',
-                                            url: '/i/slide_image_one.png',
+                                            url: 'i/slide_image_one.png',
                                             alt: 'я то что будет если не подгрузится картинка',
                                             title: 'я то что покажется по наведению мыши'
                                         },
@@ -446,7 +446,7 @@
                                     content: [
                                         {
                                             elem: 'img',
-                                            url: '/i/slide_image_two.png',
+                                            url: 'i/slide_image_two.png',
                                             alt: 'я то что будет если не подгрузится картинка',
                                             title: 'я то что покажется по наведению мыши'
                                         },
@@ -474,7 +474,7 @@
                                     content: [
                                         {
                                             elem: 'img',
-                                            url: '/i/slide_image_three.png',
+                                            url: 'i/slide_image_three.png',
                                             alt: 'я то что будет если не подгрузится картинка',
                                             title: 'я то что покажется по наведению мыши'
                                         },
@@ -502,7 +502,7 @@
                                     content: [
                                         {
                                             elem: 'img',
-                                            url: '/i/slide_image_four.png',
+                                            url: 'i/slide_image_four.png',
                                             alt: 'я то что будет если не подгрузится картинка',
                                             title: 'я то что покажется по наведению мыши'
                                         },
@@ -530,7 +530,7 @@
                                     content: [
                                         {
                                             elem: 'img',
-                                            url: '/i/slide_image_five.png',
+                                            url: 'i/slide_image_five.png',
                                             alt: 'я то что будет если не подгрузится картинка',
                                             title: 'я то что покажется по наведению мыши'
                                         },

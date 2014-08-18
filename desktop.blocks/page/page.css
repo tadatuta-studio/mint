@@ -8,7 +8,8 @@
 }
 .page.page_theme_normal
 {
-    font: 13px/15px 'Helvetica4Light4Light', Arial, Helvetica, sans-serif;
+    /*font: 13px/15px 'Helvetica4Light4Light', Arial, Helvetica, sans-serif;*/
+    font: 13px/15px Arial, Helvetica, sans-serif;
     margin: auto;
     font-size: 14px;
     line-height: 1.3;
