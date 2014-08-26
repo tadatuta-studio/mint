@@ -11,9 +11,9 @@
     margin: auto;
 }
 
-.portfolio .carousel
+.portfolio .carousel__inner
 {
-    /*padding: 0 40px;*/
+    width: 96%;
 }
 
 .portfolio .carousel__img
@@ -25,7 +25,7 @@
 .portfolio .carousel__summary
 {
     float: left;
-    width: 395px;
+    width: 380px;
     margin-left: 15px;
 }
 
@@ -86,4 +86,9 @@
 {
     font-size: 17px;
     color: #1bcb88;
+}
+.portfolio .heading_level_3 
+{
+    margin-top: 40px;
+    margin-bottom: 50px;
 }

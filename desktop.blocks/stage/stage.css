@@ -1,6 +1,6 @@
 .stage
 {
-    padding-top: 165px;
+    padding-top: 160px;
     width: 180px;
     display: inline-block;
     vertical-align: top;
@@ -27,15 +27,11 @@
     color: #fff;
     content: counter(li);
     counter-increment: li;
-    top: 135px;
+    top: 110px;
     padding-top: 10px;
 }
 
 .stage:last-child:after
 {
     display: none;
-}
-.stages .heading_level_3
-{
-    margin-bottom: 20px;
 }

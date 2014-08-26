@@ -1,10 +1,10 @@
 .logo
 {
     float: left;
-    background: url(logo.png) no-repeat;
+    background: url(logo.svg) 0 0 / 100% no-repeat;
     width: 125px;
     height: 90px;
-    margin-right: 25px;
+    margin-right: 90px;
     position: relative;
 }
 .logo__slogan 

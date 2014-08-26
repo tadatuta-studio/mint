@@ -13,7 +13,7 @@
     outline: none;
 }
 
-.button:active, .button:focus
+.button:active
 {
     box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
 }

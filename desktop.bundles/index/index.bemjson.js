@@ -5,7 +5,11 @@
     head: [
         { elem: 'meta', attrs: { name: 'description', content: 'Landing page и контекстная реклама для вашего бизнеса с гарантией прибыли' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-        { elem: 'css', url: '_index.css' }
+        { elem: 'meta', attrs: { property: 'og:title', content: 'Landing page — Mint: интеллектуальный маркетинг' } },
+        { elem: 'meta', attrs: { property: 'og:description', content: 'Landing page и контекстная реклама для вашего бизнеса с гарантией прибыли' } },
+        { elem: 'meta', attrs: { property: 'og:image', content: '../../desktop.blocks/logo/logo.png' } },
+        { elem: 'css', url: '_index.css', ie: false },
+        { elem: 'css', url: '_index.ie8.css', ie: 'IE 8' }
     ],
     scripts: [{ elem: 'js', url: '_index.js' }],
     mods: { theme: 'normal' },
@@ -107,24 +111,359 @@
                                 {
                                     elem: 'item',
                                     elemMods: { state: 'active' },
-                                    content: {
-                                        elem: 'img',
-                                        url: 'i/first-screen-slider_one.png'
-                                    }
+                                    // content: {
+                                    //     elem: 'img',
+                                    //     url: 'i/first-screen-slider_one.png'
+                                    //     url: 'i/first-screen-slider.svg'
+                                    // }
+                                    content: [
+                                        {
+                                            elem: 'leftSide',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Просто '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'делайте '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'хорошую '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'рекламу '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'и деньги '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'придут.'
+                                                },
+                                                {
+                                                    elem: 'autor',
+                                                    content: 'Лео Бернетт'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'center',
+                                            content:  [
+                                                {
+                                                    elem: 'centerInner',
+                                                    content: [
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'Если говорят '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'о рекламе, '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'это плохая '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'реклама. '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'Если говорят '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'о товаре, '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'это хорошая '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'реклама.'
+                                                        }, 
+                                                        {
+                                                            elem: 'autor',
+                                                            content: 'Девид Огилви'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'rightSide',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Без рекламы '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'произойдет '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'самое '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'ужасное — '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'не произойдет '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'ничего.'
+                                                },
+                                                {
+                                                    elem: 'autor',
+                                                    content: 'Том Бискарди'
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
                                     elem: 'item',
-                                    content: {
-                                        elem: 'img',
-                                        url: 'i/first-screen-slider_two.png'
-                                    }
+                                    content: [
+                                        {
+                                            elem: 'leftSide',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Если говорят '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'о рекламе, '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'это плохая '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'реклама. '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Если говорят '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'о товаре, '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'это хорошая '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'реклама.'
+                                                }, 
+                                                {
+                                                    elem: 'autor',
+                                                    content: 'Девид Огилви'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'center',
+                                            content:  [
+                                                {
+                                                    elem: 'centerInner',
+                                                    content: [
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'Без рекламы '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'произойдет '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'самое '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'ужасное — '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'не произойдет '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'ничего.'
+                                                        },
+                                                        {
+                                                            elem: 'autor',
+                                                            content: 'Том Бискарди'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'rightSide',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Просто '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'делайте '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'хорошую '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'рекламу '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'и деньги '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'придут.'
+                                                },
+                                                {
+                                                    elem: 'autor',
+                                                    content: 'Лео Бернетт'
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
                                     elem: 'item',
-                                    content: {
-                                        elem: 'img',
-                                        url: 'i/first-screen-slider_three.png'
-                                    }
+                                    content: [
+                                        {
+                                            elem: 'leftSide',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Без рекламы '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'произойдет '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'самое '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'ужасное — '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'не произойдет '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'ничего.'
+                                                },
+                                                {
+                                                    elem: 'autor',
+                                                    content: 'Том Бискарди'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'center',
+                                            content:  [
+                                                {
+                                                    elem: 'centerInner',
+                                                    content: [
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'Просто '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'делайте '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'хорошую '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'рекламу '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'и деньги '
+                                                        },
+                                                        {
+                                                            tag: 'span',
+                                                            content: 'придут.'
+                                                        },
+                                                        {
+                                                            elem: 'autor',
+                                                            content: 'Лео Бернетт'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'rightSide',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Если говорят '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'о рекламе, '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'это плохая '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'реклама. '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'Если говорят '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'о товаре, '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'это хорошая '
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: 'реклама.'
+                                                }, 
+                                                {
+                                                    elem: 'autor',
+                                                    content: 'Девид Огилви'
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -224,30 +563,48 @@
                             content: [
                                 {
                                     block: 'timer',
+                                    mix: { block: 'i-bem'},
+                                    js: { time: (new Date('2014, 9 ,8').getTime())},
                                     content: [
                                         {
                                             elem: 'item',
-                                            mix:{ block: 'days'},
-                                            content: '00'
+                                            mix:{ block: 'timer', elem: 'days'}
                                         },
                                         ' : ',
                                         {
                                             elem: 'item',
-                                            mix:{ block: 'hours'},
-                                            content: '00'
+                                            mix:{ block: 'timer', elem: 'hours'}
                                         },
                                         ' : ',
                                         {
                                             elem: 'item',
-                                            mix:{ block: 'minutes'},
-                                            content: '00'
+                                            mix:{ block: 'timer', elem: 'minutes'}
                                         }
                                     ]
                                 },
                                 {
                                     block: 'description',
                                     mods: { size: 'small', color: 'orange'},
-                                    content: 'Предложение действует до 01. 07. 2014'
+                                    content: [
+                                        'Предложение действует до ',
+                                        {
+                                            elem: 'item',
+                                            mix: { block: 'description', elem: 'day'},
+                                            content: '01'
+                                        },
+                                        '. ',
+                                        {
+                                            elem: 'item',
+                                            mix: { block: 'description', elem: 'month'},
+                                            content: '09'
+                                        },
+                                        '. ',
+                                        {
+                                            elem: 'item',
+                                            mix: { block: 'description', elem: 'year'},
+                                            content: '2014'
+                                        }
+                                    ]
                                 }
                             ]
                         }

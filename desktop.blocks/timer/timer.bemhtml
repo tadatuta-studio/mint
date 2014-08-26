@@ -1,1 +1,4 @@
 block('timer').elem('item').tag()('span');
+block('timer')(
+    js()(true)
+);

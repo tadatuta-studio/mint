@@ -19,7 +19,7 @@
 .action__old:after
 {
     content: "";
-    background: url(/i/cross_small.png) no-repeat;
+    background: url(cross__small.png) no-repeat;
     background-size: 100%;
     position: absolute;
     left: 0;

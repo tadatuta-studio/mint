@@ -21,3 +21,14 @@
     margin-top: -97px;
     margin-left: -44px;
 }
+.first-screen__carousel .carousel__item
+{
+    margin-left: -85px;
+    margin-top: 5px;
+    background: url(first-screen-slider.svg) no-repeat;
+    width: 806px;
+    height: 710px;
+    font-size: 35px;
+    color: #fff;
+    line-height: 1.32;
+}

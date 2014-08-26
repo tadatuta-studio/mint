@@ -1,8 +1,10 @@
-.features__inner {
-    width: 1000px;
-    margin: 62px auto 0;
-}
-.features .heading_level_4
+.features__inner 
 {
-	margin-bottom: 60px;
+    width: 1000px;
+    margin: 20px auto 0;
+}
+.features .heading_level_4 
+{
+	margin-top: 60px;
+	margin-bottom: 0;
 }

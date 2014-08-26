@@ -2,9 +2,9 @@
 {
     background: #1bcb88;
     color: #fff;
-    padding: 30px 180px;
+    padding: 29px 180px;
     font-size: 54.23px;
-    margin-top: 85px;
+    margin-top: 88px;
 }
 
 .price__inner
@@ -22,7 +22,7 @@
 .price__old:after
 {
     content: "";
-    background: url(/i/cross_big.png) no-repeat;
+    background: url(cross__big.png) no-repeat;
     background-size: 100%;
     position: absolute;
     left: 0;
