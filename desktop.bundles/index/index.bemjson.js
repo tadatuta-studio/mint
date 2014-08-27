@@ -1,7 +1,7 @@
 ({
     block: 'page',
     title: 'Landing page — Mint: интеллектуальный маркетинг',
-    favicon: '/favicon.ico',
+    favicon: '../../favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: 'Landing page и контекстная реклама для вашего бизнеса с гарантией прибыли' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
