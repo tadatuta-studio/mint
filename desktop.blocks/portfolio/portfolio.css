@@ -27,6 +27,7 @@
     float: left;
     width: 380px;
     margin-left: 15px;
+    position: relative;
 }
 
 .portfolio .carousel__control
@@ -80,12 +81,17 @@
 {
     font-size: 17px;
     color: #fc005e;
+    position: absolute;
+    bottom: 0;
+    width: 250px;
 }
 
 .portfolio .carousel__price
 {
     font-size: 17px;
     color: #1bcb88;
+    position: absolute;
+    bottom: 50px;
 }
 .portfolio .heading_level_3 
 {

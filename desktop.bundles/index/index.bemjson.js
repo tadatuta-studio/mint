@@ -708,7 +708,7 @@
                             content: [
                                 {
                                     elem: 'title',
-                                    content: 'Реклама'
+                                    content: 'Аналитика'
                                 },
                                 {
                                     elem: 'description',
