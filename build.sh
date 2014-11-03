@@ -10,3 +10,4 @@ cp desktop.bundles/index/_index.js $OUTPUT_DIR/
 cp -r desktop.bundles/index/i/* $OUTPUT_DIR/i/
 cp -r i/* $OUTPUT_DIR/i/
 touch $OUTPUT_DIR/.nojekyll
+echo "mint.msk.ru" >> $OUTPUT_DIR/CNAME
