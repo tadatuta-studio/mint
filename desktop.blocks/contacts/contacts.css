@@ -14,7 +14,8 @@
     width: 280px;
     margin-left: 150px;
 }
-.contacts .input:first-child .input__control 
+
+.contacts .input:first-child .input__control
 {
 	margin-bottom: 15px;
 }

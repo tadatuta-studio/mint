@@ -8,6 +8,8 @@ npm-debug.log
 
 # bem
 .bem/cache/
+i/
+output
 *bundles*/*/*.*
 !*bundles*/*/*.bemjson.js
 !*bundles*/.bem/*

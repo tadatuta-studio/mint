@@ -1,8 +1,10 @@
-.call-us {
+.call-us
+{
     float: right;
     padding-top: 12px;
     text-align: right;
 }
+
 .button.call-us__button
 {
 	width: auto;

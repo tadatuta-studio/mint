@@ -82,7 +82,7 @@
     width: 377px;
     z-index: 1;
     transform: rotate(0.4deg);
-    background: url("../../desktop.blocks/carousel/first-screen-slider_center.svg") -253px -191px no-repeat;
+    background: url(first-screen-slider_center.svg) -253px -191px no-repeat;
     background-size: 340%;
 }
 

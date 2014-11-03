@@ -7,10 +7,9 @@
 {
     background: #af1309;
 }
+
 .button_color_orange:focus
 {
-    -webkit-box-shadow: 0px 0px 15px #fc3307;
-       -moz-box-shadow: 0px 0px 15px #fc3307;
-            box-shadow: 0px 0px 15px #fc3307;
+    box-shadow: 0px 0px 15px #fc3307;
 }
-        
+
