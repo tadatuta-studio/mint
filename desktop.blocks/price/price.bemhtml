@@ -1,1 +1,9 @@
-block('price').elem('old').tag()('span');
+block('price')(
+    content()(function() {
+        return {
+            elem: 'inner',
+            content: applyNext()
+        }
+    }),
+    elem('old').tag()('span')
+);

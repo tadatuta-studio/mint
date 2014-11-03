@@ -1,1 +1,11 @@
-block('action').elem('old').tag()('span');
+block('action')(
+    mix()('clearfix'),
+    content()(function() {
+        return {
+            elem: 'inner',
+            content: applyNext()
+        }
+    }),
+    elem('inner').mix()({ block: 'clearfix' }),
+    elem('old').tag()('span')
+);

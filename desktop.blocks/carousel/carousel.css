@@ -19,6 +19,7 @@
     margin: 73px 10px 40px 73%;
     cursor: pointer;
 }
+
 .carousel__paginator-button
 {
     float: left;
@@ -27,11 +28,14 @@
     margin: 0 6px;
     background: #fff;
 }
+
 .carousel__paginator-button_state_active
 {
     background: #e36723;
 }
-.carousel__item .carousel__autor, .carousel__item span
+
+.carousel__item .carousel__author,
+.carousel__text
 {
     display: inline-block;
     padding: 0 5px;
@@ -39,31 +43,39 @@
     background: #020E29;
     white-space: nowrap;
 }
-.carousel__center .carousel__autor
+
+.carousel__center .carousel__author
 {
     margin-top: 15px;
     font-size: 26px;
     padding: 5px;
 }
-.carousel__leftSide .carousel__autor, .carousel__rightSide .carousel__autor
+
+.carousel__left-side .carousel__author,
+.carousel__right-side .carousel__author
 {
     margin-top: 35px;
     font-size: 20px;
     padding: 5px;
 }
-.carousel__leftSide, .carousel__rightSide, .carousel__center
+
+.carousel__left-side,
+.carousel__right-side,
+.carousel__center
 {
     position: absolute;
     overflow: hidden;
 }
-.carousel__leftSide
+
+.carousel__left-side
 {
     left: 148px;
     top: 294px;
     width: 105px;
     font-size: 21px;
 }
-.carousel__center 
+
+.carousel__center
 {
     left: 253px;
     top: 190px;
@@ -73,25 +85,24 @@
     background: url("../../desktop.blocks/carousel/first-screen-slider_center.svg") -253px -191px no-repeat;
     background-size: 340%;
 }
-.carousel__centerInner
+
+.carousel__center-inner
 {
     margin: 40px 35px;
     height: 435px;
     width: 260px;
 }
 
-.carousel__rightSide
+.carousel__right-side
 {
     left: 485px;
     top: 278px;
     width: 240px;
     font-size: 21px;
 }
-.carousel__leftSide, .carousel__rightSide
+
+.carousel__left-side,
+.carousel__right-side
 {
     filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -webkit-filter: blur(2px);
 }

@@ -9,7 +9,7 @@
     "libs"
   ],
   "dependencies": {
-    "bem-components": "84269fed566ba22a0a144a67ff9b9e2cb4f1c154",
+    "bem-components": "a02b09448af2c292d8a628e0344d7cd97cb9867e",
     "bl-carousel": "https://github.com/tadatuta/bl-carousel.git#v2"
   }
 }

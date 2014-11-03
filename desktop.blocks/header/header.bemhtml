@@ -1,7 +1,9 @@
 block('header')(
     mix()({ block: 'clearfix' }),
-    content()({
-        elem: 'inner',
-        content: applyNext()
+    content()(function() {
+        return {
+            elem: 'inner',
+            content: applyNext()
+        };
     })
 );

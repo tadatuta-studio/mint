@@ -1,4 +1,6 @@
-block('contacts').content()({
-    elem: 'inner',
-    content: applyNext()
+block('contacts').content()(function() {
+    return {
+        elem: 'inner',
+        content: applyNext()
+    };
 });
