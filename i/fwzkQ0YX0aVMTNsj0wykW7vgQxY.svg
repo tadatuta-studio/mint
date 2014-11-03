@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="595px" height="595px" viewBox="-52.1582031 -54.7480469 595 595"
+	 enable-background="new -52.1582031 -54.7480469 595 595" xml:space="preserve">
+<defs>
+</defs>
+<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="310.5185547,351.0625 
+	258.078125,403.5419922 356.9111328,502.3867188 523.9707031,335.3720703 485.7939453,296.5273438 357.9912109,402.6572266 "/>
+<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="290.6269531,331.0263672 
+	311.5214844,310.1152344 331.5371094,331.8691406 360.7675781,363.6376953 362.0410156,362.5800781 362.0410156,279.8349609 
+	281.0644531,279.8349609 281.0644531,340.5957031 "/>
+<path fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" d="M248.1640625,433.4765625H34.09375
+	V78.7915039h359.7441406v257.4516602l29.8417969-24.78125V45.5991211V4.2519531H4.2519531v462.4160156h277.0996094
+	L248.1640625,433.4765625z M62.4609375,29.8154297h50.2050781v28.0859375H62.4609375V29.8154297z"/>
+<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="238.2666016,383.5058594 
+	253.2373047,368.5244141 253.2373047,279.8349609 172.2607422,279.8349609 172.2607422,399.4570313 222.328125,399.4570313 "/>
+<rect x="63.4570313" y="279.8349609" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="80.9755859" height="119.6220703"/>
+<rect x="103.9453125" y="116.9980469" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="217.6074219" height="45.3330078"/>
+<rect x="63.4570313" y="209.4072266" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="149.2910156" height="26.1538086"/>
+<rect x="286.4375" y="212.4589844" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="70.2304688" height="26.1533203"/>
+</svg>
