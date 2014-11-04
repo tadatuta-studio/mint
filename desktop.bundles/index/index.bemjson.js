@@ -67,13 +67,13 @@ var quotes = [
 return {
     block: 'page',
     title: 'Landing page — Mint: интеллектуальный маркетинг',
-    favicon: '../../favicon.ico',
+    favicon: '/favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: 'Landing page и контекстная реклама для вашего бизнеса с гарантией прибыли' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
         { elem: 'meta', attrs: { property: 'og:title', content: 'Landing page — Mint: интеллектуальный маркетинг' } },
         { elem: 'meta', attrs: { property: 'og:description', content: 'Landing page и контекстная реклама для вашего бизнеса с гарантией прибыли' } },
-        { elem: 'meta', attrs: { property: 'og:image', content: '../../desktop.blocks/logo/logo.png' } },
+        { elem: 'meta', attrs: { property: 'og:image', content: '/i/JXZn-2ztyioi1LF9OOJ7NWv2LiA.png' } },
         { elem: 'css', url: '_index.css', ie: false },
         { elem: 'css', url: '_index.css', ie: 'gte IE 9' },
         { elem: 'css', url: '_index.ie8.css', ie: 'lte IE 8' }
@@ -459,8 +459,8 @@ return {
                                         {
                                             elem: 'img',
                                             url: 'i/slide_image_one.png',
-                                            alt: 'я то что будет если не подгрузится картинка',
-                                            title: 'я то что покажется по наведению мыши'
+                                            alt: '',
+                                            title: ''
                                         },
                                         {
                                             elem: 'summary',
@@ -487,8 +487,8 @@ return {
                                         {
                                             elem: 'img',
                                             url: 'i/slide_image_two.png',
-                                            alt: 'я то что будет если не подгрузится картинка',
-                                            title: 'я то что покажется по наведению мыши'
+                                            alt: '',
+                                            title: ''
                                         },
                                         {
                                             elem: 'summary',
@@ -515,8 +515,8 @@ return {
                                         {
                                             elem: 'img',
                                             url: 'i/slide_image_three.png',
-                                            alt: 'я то что будет если не подгрузится картинка',
-                                            title: 'я то что покажется по наведению мыши'
+                                            alt: '',
+                                            title: ''
                                         },
                                         {
                                             elem: 'summary',
@@ -543,8 +543,8 @@ return {
                                         {
                                             elem: 'img',
                                             url: 'i/slide_image_four.png',
-                                            alt: 'я то что будет если не подгрузится картинка',
-                                            title: 'я то что покажется по наведению мыши'
+                                            alt: '',
+                                            title: ''
                                         },
                                         {
                                             elem: 'summary',
@@ -571,8 +571,8 @@ return {
                                         {
                                             elem: 'img',
                                             url: 'i/slide_image_five.png',
-                                            alt: 'я то что будет если не подгрузится картинка',
-                                            title: 'я то что покажется по наведению мыши'
+                                            alt: '',
+                                            title: ''
                                         },
                                         {
                                             elem: 'summary',
