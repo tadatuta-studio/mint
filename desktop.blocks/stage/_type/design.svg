@@ -1,35 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
 	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
-]>
-<svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="595px" height="595px" viewBox="-36.3740234 -31.1958008 595 595"
-	 enable-background="new -36.3740234 -31.1958008 595 595" xml:space="preserve">
-<defs>
-</defs>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="74.6943359,236.3061523 
-	123.1962891,187.8041992 75.6240234,187.8041992 74.6943359,188.7338867 "/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="74.6943359,330.737793 
-	217.6279297,187.8041992 170.0556641,187.8041992 74.6943359,283.1655273 "/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="74.6943359,425.1694336 
-	312.0595703,187.8041992 264.4873047,187.8041992 74.6943359,377.597168 "/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="365.1357422,187.8041992 
-	358.9189453,187.8041992 82.9189453,463.8041992 130.4912109,463.8041992 365.1357422,229.159668 "/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="365.1357422,276.019043 
-	177.3505859,463.8041992 224.9228516,463.8041992 365.1357422,323.5913086 "/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="365.1357422,370.4506836 
-	271.7822266,463.8041992 319.3544922,463.8041992 365.1357422,418.0229492 "/>
-<rect x="74.6943359" y="71.6040039" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="71.4667969" height="54.0053711"/>
-<rect x="217.6279297" y="71.6040039" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="159.0664063" height="54.0053711"/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="447.1337891,8.6074219 
-	447.1337891,4.2519531 4.2519531,4.2519531 4.2519531,8.6118164 4.2519531,37.890625 4.2519531,490.9233398 4.2519531,524.5610352 
-	4.2519531,524.5620117 366.2138672,524.5620117 366.2138672,490.9233398 37.890625,490.9233398 37.890625,37.890625 
-	413.4990234,37.890625 413.4990234,143.2841797 447.1376953,109.8041992 447.1376953,8.6074219 "/>
-<polygon fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" points="500.3876953,203.3081055 
-	401.3623047,203.3081055 450.8769531,143.2841797 "/>
-<rect x="401.3632813" y="219.1894531" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="99.0253906" height="201.0913086"/>
-<rect x="401.3642578" y="442.5825195" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="99.0253906" height="32.7568359"/>
-<rect x="401.3642578" y="497.6411133" fill="none" stroke="#E36723" stroke-width="8.5039396" stroke-miterlimit="10" width="99.0253906" height="35.3330078"/>
-</svg>
+]><svg xmlns="http://www.w3.org/2000/svg" width="595" height="595" viewBox="-36.3740234 -31.1958008 595 595" enable-background="new -36.3740234 -31.1958008 595 595"><path stroke="#E36723" stroke-width="8.504" stroke-miterlimit="10" fill="none" d="M74.694 236.306l48.502-48.502H75.624l-.93.93zM74.694 330.738l142.934-142.934h-47.572l-95.362 95.362zM74.694 425.17L312.06 187.803h-47.573L74.694 377.597zM365.136 187.804h-6.217l-276 276h47.57L365.137 229.16zM365.136 276.02L177.35 463.803h47.573L365.136 323.59zM365.136 370.45l-93.354 93.354h47.572l45.782-45.78zM74.694 71.604h71.467v54.005H74.695zM217.628 71.604h159.066v54.005H217.628zM447.134 8.607V4.252H4.252v520.31h361.962v-33.64H37.89V37.893H413.5v105.392l33.638-33.48V8.607zM500.388 203.308h-99.026l49.515-60.024zM401.363 219.19h99.025v201.09h-99.025zM401.364 442.583h99.025v32.757h-99.026zM401.364 497.64h99.025v35.334h-99.026z"/></svg>
