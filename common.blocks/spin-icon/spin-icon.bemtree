@@ -1,0 +1,13 @@
+block('spin-icon').content()(function() {
+    return {
+        block : 'icon',
+        content : {
+            block : 'spin',
+            mods : {
+                progress : true,
+                size : this.ctx.mods && this.ctx.mods.size || 'xs',
+                theme : 'islands'
+            }
+        }
+    };
+});

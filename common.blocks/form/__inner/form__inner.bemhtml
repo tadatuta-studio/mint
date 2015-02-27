@@ -1,0 +1,7 @@
+block('form').elem('inner')(
+    attrs()({
+        method : 'POST',
+        action : ' https://mandrillapp.com/api/1.0/messages/send.json'
+    }),
+    tag()('form')
+);

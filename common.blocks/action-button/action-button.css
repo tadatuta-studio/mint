@@ -1,0 +1,19 @@
+.action-button__spin
+{
+    display: none;
+}
+
+.action-button_pending .action-button__spin
+{
+    display: inline-block;
+}
+
+.action-button_pending .action-button__spin + .icon
+{
+    display: none;
+}
+
+.action-button_pending .action-button__spin + .button__text
+{
+    margin-left: 0;
+}

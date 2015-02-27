@@ -1,0 +1,89 @@
+block('form').mod('type', 'sendmail').content()(function() {
+    return [
+        {
+            elem : 'inner',
+            content : [
+                {
+                    block : 'paranja',
+                    mods : { local : true },
+                    mix : { block : 'form', elem : 'paranja' },
+                    content : { block : 'spin', mods : { progress : true, size : 'xl', theme : 'islands' } }
+                },
+                {
+                    tag : 'input',
+                    attrs : {
+                        name : 'subject',
+                        type : 'hidden',
+                        value : this.ctx.subject
+                    }
+                },
+                {
+                    block : 'input',
+                    name : 'name',
+                    mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                    placeholder : 'Ваше имя',
+                    mix : [
+                        {
+                            block : 'form',
+                            elem : 'control',
+                            elemMods : {
+                                type : 'input'
+                            }
+                        }
+                    ]
+                },
+                {
+                    block : 'input',
+                    name : 'email',
+                    mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                    placeholder : 'Ваше e-mail',
+                    mix : [
+                        {
+                            block : 'form',
+                            elem : 'control',
+                            elemMods : {
+                                type : 'input'
+                            }
+                        }
+                    ]
+                },
+                {
+                    block : 'input',
+                    name : 'phone',
+                    mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                    placeholder : 'Номер телефона',
+                    mix : [
+                        {
+                            block : 'form',
+                            elem : 'control',
+                            elemMods : {
+                                type : 'input'
+                            }
+                        }
+                    ]
+                },
+                {
+                    block : 'input',
+                    name : 'message',
+                    mods : { theme : 'islands', size : 'm', type : 'textarea', 'has-clear' : true },
+                    placeholder : 'Сообщение',
+                    mix : [
+                        {
+                            block : 'form',
+                            elem : 'control',
+                            elemMods : {
+                                type : 'textarea'
+                            }
+                        }
+                    ]
+                }
+                // TODO: some kind of captcha
+            ]
+        },
+        {
+            elem : 'control',
+            elemMods : { type : 'submit' },
+            content : 'Отправить'
+        }
+    ];
+});

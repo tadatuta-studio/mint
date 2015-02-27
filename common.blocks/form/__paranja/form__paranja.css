@@ -1,0 +1,19 @@
+.form .form__paranja
+{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.05);
+}
+
+.form_pending .form__paranja
+{
+    display: block;
+}
+
+.form .form__paranja .spin
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -19px 0 0 -19px;
+}

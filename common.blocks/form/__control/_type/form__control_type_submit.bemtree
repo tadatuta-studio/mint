@@ -1,0 +1,20 @@
+block('form').elem('control').elemMod('type', 'submit').def()(function() {
+    return applyCtx({
+        block : 'button',
+        type : 'submit',
+        mods : {
+            size : this.ctx.elemMods.size || 'm',
+            theme : 'islands',
+            type : 'submit',
+            view : this.ctx.elemMods.view
+        },
+        mix : [{
+            block : 'form',
+            elem : 'control',
+            elemMods : { type : 'submit' }
+        }].concat(this.ctx.mix || []),
+        attrs : this.ctx.attrs,
+        icon : [applyCtx({ block : 'spin-icon' })].concat(this.ctx.icon || []),
+        text : this.ctx.content
+    });
+});

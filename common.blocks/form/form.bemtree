@@ -1,0 +1,13 @@
+block('form').content()([
+    {
+        elem : 'inner',
+        content : [
+            {
+                block : 'paranja',
+                mods : { local : true },
+                mix : { block : 'form', elem : 'paranja' },
+                content : { block : 'spin', mods : { progress : true, size : 'xl', theme : 'islands' } }
+            }
+        ]
+    }
+]);

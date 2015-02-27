@@ -1,0 +1,26 @@
+.form_type_sendmail .form__control
+{
+    margin: 0 0 15px;
+}
+
+.form_type_sendmail .form__control:last-child
+{
+    margin-bottom: 0;
+}
+
+.form_type_sendmail .form__inner ~ .form__control
+{
+    margin-top: 15px;
+}
+
+
+.form_type_sendmail.popup
+{
+    padding: 15px;
+    text-align: right;
+}
+
+.form_type_sendmail.popup .form__submit-status
+{
+    text-align: left;
+}

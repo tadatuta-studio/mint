@@ -1,0 +1,4 @@
+.input.form__control_not-valid
+{
+    outline: 2px solid red;
+}

@@ -1,19 +1,19 @@
-.button
-{
-    text-align: center;
-    border: none;
-    color: #fff;
-    width: 100%;
-    cursor: pointer;
-    transition: background .2s linear;
-}
+/*.button*/
+/*{*/
+    /*text-align: center;*/
+    /*border: none;*/
+    /*color: #fff;*/
+    /*width: 100%;*/
+    /*cursor: pointer;*/
+    /*transition: background .2s linear;*/
+/*}*/
 
-.button:focus
-{
-    outline: none;
-}
+/*.button:focus*/
+/*{*/
+    /*outline: none;*/
+/*}*/
 
-.button:active
-{
-    box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);
-}
+/*.button:active*/
+/*{*/
+    /*box-shadow: inset 1px 1px 15px rgba(42, 22, 20, 0.95);*/
+/*}*/

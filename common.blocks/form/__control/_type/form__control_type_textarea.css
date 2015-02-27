@@ -1,0 +1,12 @@
+.form__control_type_textarea
+{
+    display: block;
+    width: 100%;
+}
+
+.form__control_type_textarea .input__control
+{
+    min-height: 200px;
+
+    resize: vertical;
+}

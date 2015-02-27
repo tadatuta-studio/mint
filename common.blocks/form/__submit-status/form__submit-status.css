@@ -1,0 +1,21 @@
+.form__submit-status
+{
+    display: none;
+    margin: 15px 0 0;
+}
+
+.form__submit-status_state_success,
+.form__submit-status_state_error
+{
+    display: block;
+}
+
+.form__submit-status_state_success
+{
+    color: green;
+}
+
+.form__submit-status_state_error
+{
+    color: red;
+}
