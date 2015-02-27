@@ -8,6 +8,8 @@
     margin-left: 35px;
     margin-bottom: 25px;
     position: relative;
+    font-size: 14px;
+    line-height: normal;
 }
 
 .stage__title

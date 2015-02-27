@@ -79,7 +79,7 @@ return {
         { elem: 'css', url: '_index.ie8.css', ie: 'lte IE 8' }
     ],
     scripts: [{ elem: 'js', url: '_index.js' }],
-    mods: { theme: 'normal' },
+    mods: { theme: 'islands' },
     content: [
         {
             block: 'header',
@@ -87,14 +87,8 @@ return {
                 {
                     block: 'logo',
                     content: [
-                        {
-                            elem: 'title',
-                            content: 'Mint'
-                        },
-                        {
-                            elem: 'slogan',
-                            content: 'интеллектуальный маркетинг'
-                        }
+                        { elem: 'title', content: 'Mint' },
+                        { elem: 'slogan', content: 'интеллектуальный маркетинг' }
                     ]
                 },
                 {
@@ -189,9 +183,7 @@ return {
                                 };
                             })
                         },
-                        {
-                            elem: 'paginator'
-                        }
+                        { elem: 'paginator' }
                     ]
                 },
                 {
@@ -245,7 +237,7 @@ return {
                                         {
                                             block : 'input',
                                             name : 'name',
-                                            mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                                            mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
                                             placeholder : 'Ваше имя',
                                             mix : [
                                                 {
@@ -260,7 +252,7 @@ return {
                                         {
                                             block : 'input',
                                             name : 'phone',
-                                            mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                                            mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
                                             placeholder : 'Номер телефона',
                                             mix : [
                                                 {
@@ -783,7 +775,7 @@ return {
                                 {
                                     block : 'input',
                                     name : 'name',
-                                    mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                                    mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
                                     placeholder : 'Ваше имя',
                                     mix : [
                                         {
@@ -798,7 +790,7 @@ return {
                                 {
                                     block : 'input',
                                     name : 'phone',
-                                    mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                                    mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
                                     placeholder : 'Номер телефона',
                                     mix : [
                                         {
@@ -817,7 +809,8 @@ return {
                             elem : 'submit-status'
                         },
                         {
-                            elem: 'hint',
+                            block : 'contacts',
+                            elem: 'form-hint',
                             content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
                         },
                         {

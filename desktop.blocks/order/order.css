@@ -10,11 +10,13 @@
 .order__description
 {
     font-size: 18.67px;
+    line-height: normal;
 }
 
 .order__or
 {
     font-size: 21px;
+    line-height: normal;
     /*text-align: center;*/
     margin-top: 50px;
 }

@@ -1,11 +1,13 @@
 .header {
-    background: rgba( 239,239,239,.95);
-    color: #e54271;
     position: relative;
     z-index: 2;
+    background: rgba( 239,239,239,.95);
+    color: #e54271;
+    font-size: 14px;
+    line-height: normal;
 }
 
 .header__inner {
-    width: 1000px;
     margin: auto;
+    width: 1000px;
 }

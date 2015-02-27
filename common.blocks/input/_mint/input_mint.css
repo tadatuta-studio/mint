@@ -1,0 +1,15 @@
+.input.input_mint .input__control
+{
+    color: #1bcb88;
+}
+
+.input.input_mint.input_size_l
+{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.input.input_mint.input_size_l .input__control
+{
+    height: 35px;
+}

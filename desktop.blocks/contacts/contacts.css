@@ -19,3 +19,16 @@
 {
 	margin-bottom: 15px;
 }
+
+.contacts__form-hint
+{
+    font-size: 9px;
+    line-height: normal;
+    margin: 15px;
+    color: #a0a0a0;
+}
+
+.contacts .input
+{
+    outline: 2px solid #ff6815;
+}
