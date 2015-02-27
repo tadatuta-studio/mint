@@ -257,6 +257,24 @@ modules.define('form', [
 
                 xhr.send(r);
                 */
+
+                /*
+                 function createCORSRequest(method, url) {
+                 var xhr = new XMLHttpRequest();
+                 if('withCredentials' in xhr) { xhr.open(method, url, true); } else if(typeof XDomainRequest != 'undefined') {
+                 xhr = new XDomainRequest();
+                 xhr.open(method, url);
+                 } else { xhr = null; }
+                 return xhr;
+                 }
+                 var xhr = createCORSRequest('POST', 'http://smtp.mandrillapp.com/api/1.0/messages/send.json');
+                 if(!xhr) { throw new Error('CORS not supported');}
+                 xhr.send(JSON.stringify({    message : {        to : [
+                 { email : 'abc.ua@yandex.ru' }
+                 ], from_email : 'abc.ua@yandex.ru', from_name : 'test', subject : 'test subkect', html : 'bla vla'    }, key : 'fMt7HENrhCcLXeL3nUBG2A'}));
+                */
+
+
                 this.setMod('pending', true);
                 defer.promise().always(function() {
                     _this.delMod('pending');

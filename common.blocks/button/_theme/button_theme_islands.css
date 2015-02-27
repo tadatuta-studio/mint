@@ -1,0 +1,98 @@
+.button_mint,
+.button_mint:before
+{
+    border-radius: 0 !important;
+}
+
+.button.button_mint.button_size_m
+{
+    font-size: 13px;
+    line-height: 29px;
+}
+
+.button.button_mint.button_size_l
+{
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.button.button_mint.button_size_xl
+{
+    font-size: 22px;
+    line-height: 69px;
+}
+
+
+.button.button_mint.button_disabled
+{
+    background: rgba(0, 0, 0, 0.08) !important;
+}
+
+.button_mint.button_hovered
+{
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.button_mint.button_pressed:before,
+.button_mint.button_checked:before
+{
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.button_mint .button__text
+{
+    color: #fff !important;
+}
+
+
+.button_mint.button_color_orange,
+.button_mint.button_color_orange.button_hovered.button_pressed
+{
+    background: #ff6715 !important;
+}
+
+.button_mint.button_color_orange:before
+{
+    background: #ff6715;
+}
+
+.button_mint.button_color_orange.button_focused-hard
+{
+    box-shadow: 0 0 10px #ff6715;
+}
+
+
+.button_mint.button_color_green,
+.button_mint.button_color_green.button_hovered.button_pressed
+{
+    background: #00c89d !important;
+    color: #fff;
+}
+
+.button_mint.button_color_green:before
+{
+    background: #00c89d;
+}
+
+.button_mint.button_color_green.button_focused-hard
+{
+    box-shadow: 0 0 10px #00c89d;
+}
+
+
+.button_mint.button_color_pink,
+.button_mint.button_color_pink.button_hovered.button_pressed
+{
+    background: #ff4074 !important;
+    color: #fff;
+}
+
+.button_mint.button_color_pink:before
+{
+    background: #ff4074;
+}
+
+.button_mint.button_color_pink.button_focused-hard
+{
+    box-shadow: 0 0 10px #ff4074;
+}

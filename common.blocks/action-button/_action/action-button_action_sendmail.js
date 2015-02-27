@@ -87,20 +87,6 @@ modules.define('action-button', [
                                 elem : 'control',
                                 elemMods : { type : 'submit' }
                             }],
-                            icon : [{
-                                block : 'spin-icon',
-                                content : {
-                                    block : 'icon',
-                                    content : {
-                                        block : 'spin',
-                                        mods : {
-                                            visible : true,
-                                            size : 'xs',
-                                            theme : 'islands'
-                                        }
-                                    }
-                                }
-                            }],
                             text : 'Отправить'
                         }
                     ]
