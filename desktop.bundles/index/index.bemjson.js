@@ -67,7 +67,7 @@ var quotes = [
 return {
     block: 'page',
     title: 'Landing page — Mint: интеллектуальный маркетинг',
-    favicon: '/favicon.ico',
+    favicon: 'favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: 'Landing page и контекстная реклама для вашего бизнеса с гарантией прибыли' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
@@ -150,7 +150,7 @@ return {
                             }
                         };
                     })
-                },
+                }
             ]
         },
         {
@@ -218,6 +218,98 @@ return {
                             content: 'Мы реально увеличим ваши продажи'
                         },
                         {
+                            block : 'form',
+                            js : { name : 'feedback', model : 'sendmailForm-consult' },
+                            mods : { saveable : true, type : 'sendmail' },
+                            content : [
+                                {
+                                    elem : 'inner',
+                                    content : [
+                                        {
+                                            block : 'paranja',
+                                            mods : { local : true },
+                                            mix : { block : 'form', elem : 'paranja' },
+                                            content : {
+                                                block : 'spin',
+                                                mods : { visible : true, size : 'xl', theme : 'islands' }
+                                            }
+                                        },
+                                        {
+                                            tag : 'input',
+                                            attrs : {
+                                                name : 'subject',
+                                                type : 'hidden',
+                                                value : 'Mint заказ консультации'
+                                            }
+                                        },
+                                        {
+                                            block : 'input',
+                                            name : 'name',
+                                            mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                                            placeholder : 'Ваше имя',
+                                            mix : [
+                                                {
+                                                    block : 'form',
+                                                    elem : 'control',
+                                                    elemMods : {
+                                                        type : 'input'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block : 'input',
+                                            name : 'phone',
+                                            mods : { theme : 'islands', size : 'm', 'has-clear' : true },
+                                            placeholder : 'Номер телефона',
+                                            mix : [
+                                                {
+                                                    block : 'form',
+                                                    elem : 'control',
+                                                    elemMods : {
+                                                        type : 'input'
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    block : 'form',
+                                    elem : 'submit-status'
+                                },
+                                {
+                                    block : 'button',
+                                    type : 'submit',
+                                    mods : {
+                                        size : 'm',
+                                        theme : 'islands',
+                                        type : 'submit'
+                                    },
+                                    mix : [{
+                                        block : 'form',
+                                        elem : 'control',
+                                        elemMods : { type : 'submit' }
+                                    }],
+                                    icon : [{
+                                        block : 'spin-icon',
+                                        content : {
+                                            block : 'icon',
+                                            content : {
+                                                block : 'spin',
+                                                mods : {
+                                                    visible : true,
+                                                    size : 'xs',
+                                                    theme : 'islands'
+                                                }
+                                            }
+                                        }
+                                    }],
+                                    text : 'Заказать консультацию'
+                                }
+                            ]
+                        },
+                        {
                             block: 'form',
                             content: [
                                 {
@@ -236,7 +328,7 @@ return {
                                     content: 'Заказать консультацию'
                                 }
                             ]
-                        },
+                        }
                         // {
                         //     tag: 'script',
                         //     attrs: { src: 'http://form.jotformeu.com/jsform/42164141627348' }
@@ -291,7 +383,7 @@ return {
                         {
                             block: 'description',
                             mods: { size: 'small', color: 'orange' },
-                            content: 'Предложение действует до ' + dateStr,
+                            content: 'Предложение действует до ' + dateStr
                         }
                     ]
                 }
@@ -418,11 +510,38 @@ return {
                             mods: { type: 'order' },
                             content: [
                                 {
+                                    block : 'button',
+                                    mods : { size : 'm', theme : 'islands', togglable : 'check' },
+                                    mix : [{
+                                        block : 'action-button',
+                                        js : {
+                                            id : 'action-button_action_sendmail-1',
+                                            subject : 'Заказ брифа'
+                                        },
+                                        mods : { action : 'sendmail' }
+                                    }],
+                                    icon : {
+                                        block : 'spin-icon',
+                                        content : {
+                                            block : 'icon',
+                                            content : {
+                                                block : 'spin',
+                                                mods : {
+                                                    visible : true,
+                                                    size : 'xs',
+                                                    theme : 'islands'
+                                                }
+                                            }
+                                        }
+                                    },
+                                    text : 'Получить бриф'
+                                }/*,
+                                {
                                     block: 'button',
                                     mods: { size: 'middle', color: 'green'},
                                     // mix: {block: 'stages', elem: 'get-brief'},
                                     content: 'Получить бриф'
-                                }
+                                }*/
                             ]
                         }
                     ]
