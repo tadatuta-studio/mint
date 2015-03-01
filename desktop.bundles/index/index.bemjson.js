@@ -706,9 +706,11 @@ return {
             ]
         },
         {
-            block: 'price',
+            block: 'section',
+            mix : { block: 'price' },
             content: [
                 {
+                    block: 'price',
                     elem: 'title',
                     content: [
                         {
@@ -718,7 +720,7 @@ return {
                         'Профессиональные лендинги<br>',
                         'от ',
                         {
-                           elem: 'old', // TODO: rename
+                           elem: 'old',
                            content: '50 000'
                         },
                         '28 000 рублей'
@@ -727,107 +729,120 @@ return {
             ]
         },
         {
-            block: 'contacts',
-            content: [
-                {
-                    block: 'order',
-                    content: [
-                        {
-                            elem: 'description',
-                            content: 'Оставьте заявку на бесплатный маркетинговый анализ вашего рынка. Наш менеджер свяжется с вами в течении рабочего дня.'
-                        },
-                        {
-                            elem: 'or',
-                            content: 'Или позвоните нам'
-                        },
-                        {
-                            block: 'description',
-                            mods: { size: 'medium', color: 'pink'},
-                            content: '+7 (495) 664-21-15'
-                        }
-                    ]
-                },
-                {
-                    block : 'form',
-                    js : { name : 'feedback', model : 'sendmailForm-consult' },
-                    mods : { saveable : true, type : 'sendmail' },
-                    mix: { block: 'contacts', elem: 'form' },
-                    content : [
-                        {
-                            elem : 'inner',
-                            content : [
-                                {
-                                    block : 'paranja',
-                                    mods : { local : true },
-                                    mix : { block : 'form', elem : 'paranja' },
-                                    content : {
-                                        block : 'spin',
-                                        mods : { visible : true, size : 'xl', theme : 'islands' }
+            block: 'section',
+            mix : { block : 'contacts' },
+            content: {
+                block : 'form',
+                js : { name : 'feedback', model : 'sendmailForm-consult' },
+                mods : { saveable : true, type : 'sendmail' },
+                content : [
+                    {
+                        block : 'contacts', elem : 'row',
+                        content : [
+                            {
+                                block : 'contacts', elem : 'col', elemMods : { num : 1 },
+                                mix : { block : 'contacts', elem: 'text' },
+                                content: 'Оставьте заявку на бесплатный маркетинговый анализ вашего рынка. Наш менеджер свяжется с вами в течении рабочего дня.'
+                            },
+                            {
+                                block : 'contacts', elem : 'col', elemMods : { num : 2 },
+                                content : [
+                                    {
+                                        block : 'form',
+                                        elem : 'inner',
+                                        content : [
+                                            {
+                                                block : 'paranja',
+                                                mods : { local : true },
+                                                mix : { block : 'form', elem : 'paranja' },
+                                                content : {
+                                                    block : 'spin',
+                                                    mods : { visible : true, size : 'xl', theme : 'islands' }
+                                                }
+                                            },
+                                            {
+                                                tag : 'input',
+                                                attrs : {
+                                                    name : 'subject',
+                                                    type : 'hidden',
+                                                    value : 'Mint заказ консультации'
+                                                }
+                                            },
+                                            {
+                                                block : 'input',
+                                                name : 'name',
+                                                mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
+                                                placeholder : 'Ваше имя',
+                                                mix : [
+                                                    {
+                                                        block : 'form',
+                                                        elem : 'control',
+                                                        elemMods : {
+                                                            type : 'input'
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                block : 'input',
+                                                name : 'phone',
+                                                mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
+                                                placeholder : 'Номер телефона',
+                                                mix : [
+                                                    {
+                                                        block : 'form',
+                                                        elem : 'control',
+                                                        elemMods : {
+                                                            type : 'input'
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        block : 'contacts', elem: 'form-hint',
+                                        content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
+                                    },
+                                    { block : 'form', elem : 'submit-status' }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        block : 'contacts', elem : 'row',
+                        content : [
+                            {
+                                block : 'contacts', elem : 'col', elemMods : { num : 1 },
+                                mix : { block : 'contacts', elem: 'text', elemMods : { contact : true } },
+                                content: [
+                                    'Или позвоните нам',
+                                    {
+                                        elem : 'phone',
+                                        content : '+7 (495) 664-21-15'
                                     }
-                                },
-                                {
-                                    tag : 'input',
-                                    attrs : {
-                                        name : 'subject',
-                                        type : 'hidden',
-                                        value : 'Mint заказ консультации'
-                                    }
-                                },
-                                {
-                                    block : 'input',
-                                    name : 'name',
-                                    mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
-                                    placeholder : 'Ваше имя',
+                                ]
+                            },
+                            {
+                                block : 'contacts', elem : 'col', elemMods : { num : 2 },
+                                content : {
+                                    block : 'button',
+                                    type : 'submit',
+                                    mods : { color : 'pink', mint : true, size : 'xl', theme : 'islands', type : 'submit' },
                                     mix : [
                                         {
                                             block : 'form',
                                             elem : 'control',
-                                            elemMods : {
-                                                type : 'input'
-                                            }
+                                            elemMods : { type : 'submit' }
                                         }
-                                    ]
-                                },
-                                {
-                                    block : 'input',
-                                    name : 'phone',
-                                    mods : { mint : true, theme : 'islands', size : 'l', 'has-clear' : true },
-                                    placeholder : 'Номер телефона',
-                                    mix : [
-                                        {
-                                            block : 'form',
-                                            elem : 'control',
-                                            elemMods : {
-                                                type : 'input'
-                                            }
-                                        }
-                                    ]
+                                    ],
+                                    text : 'Заказать консультацию'
                                 }
-                            ]
-                        },
-                        {
-                            block : 'form',
-                            elem : 'submit-status'
-                        },
-                        {
-                            block : 'contacts',
-                            elem: 'form-hint',
-                            content: 'Гарантируем, что ваши данные не будут переданы третьим лицам'
-                        },
-                        {
-                            block : 'button',
-                            type : 'submit',
-                            mods : { color : 'pink', mint : true, size : 'xl', theme : 'islands', type : 'submit' },
-                            mix : [{
-                                block : 'form',
-                                elem : 'control',
-                                elemMods : { type : 'submit' }
-                            }],
-                            text : 'Заказать консультацию'
-                        }
-                    ]
-                }
-            ]
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     ]
 };
