@@ -289,9 +289,11 @@ return {
             ]
         },
         {
-            block: 'action',
+            block : 'section',
+            mix : { block: 'action' },
             content: [
                 {
+                    block: 'action',
                     elem: 'text',
                     content: [
                         {
@@ -307,7 +309,8 @@ return {
                             content: [
                                 'Всего от ',
                                 {
-                                    elem: 'old', // TODO: rename
+                                    tag : 'span',
+                                    elem: 'old',
                                     content: '50 000'
                                 },
                                 '28 000 рублей!'
@@ -341,7 +344,8 @@ return {
             ]
         },
         {
-            block: 'stages',
+            block : 'section',
+            mix : { block: 'stages' },
             content: [
                 {
                     block: 'heading',
@@ -355,6 +359,7 @@ return {
                     ]
                 },
                 {
+                    block: 'stages',
                     elem: 'inner',
                     mix: { block: 'clearfix' },
                     content: [
@@ -480,8 +485,8 @@ return {
             ]
         },
         {
-            block: 'portfolio',
-            mix: { block: 'clearfix' },
+            block : 'section',
+            mix: { block: 'portfolio' },
             content: [
                 {
                     block: 'heading',
@@ -658,7 +663,8 @@ return {
             ]
         },
         {
-            block: 'features',
+            block : 'section',
+            mix : { block: 'features' },
             content: [
                 {
                     block: 'heading',
@@ -672,6 +678,7 @@ return {
                     ]
                 },
                 {
+                    block : 'features',
                     elem: 'inner',
                     content: [
                         {

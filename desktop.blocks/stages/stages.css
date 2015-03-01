@@ -1,16 +1,19 @@
-.stages__inner
+.stages
 {
-    width: 1000px;
-    margin: auto;
-    position: relative;
-    counter-reset: li;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 90px;
+    padding: 46px 0 120px;
 }
 
 .stages .heading_level_3
 {
-    margin-bottom: 57px;
-    margin-top: 40px;
+    margin-bottom: 29px;
+    margin-top: 0;
+}
+
+.stages__inner
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    counter-reset: li;
+    list-style: none;
 }

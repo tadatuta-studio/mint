@@ -1,11 +1,11 @@
-.features__inner
+.features
 {
-    width: 1000px;
-    margin: 20px auto 0;
+    padding: 57px 0;
+    text-align: center;
 }
 
 .features .heading_level_4
 {
-	margin-top: 60px;
-	margin-bottom: 0;
+	margin-top: 0;
+    margin-bottom: 60px;
 }

@@ -6,9 +6,9 @@
     padding: 22px 100px;
 }
 
-.action__inner {
+.action .section__inner {
+    overflow: hidden;
     width: 770px;
-    margin: auto;
 }
 
 .action__old
