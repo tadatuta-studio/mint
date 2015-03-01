@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'Helvetica4Light4Light';
-    src: url('/fonts/Helv-4-Light/helv-4-light.eot');
-    src: url('/fonts/Helv-4-Light/helv-4-light.eot') format('embedded-opentype'),
-         url('/fonts/Helv-4-Light/helv-4-light.woff') format('woff'),
-         url('/fonts/Helv-4-Light/helv-4-light.ttf') format('truetype'),
-         url('/fonts/Helv-4-Light/helv-4-light.svg#Helvetica4Light4Light') format('svg');
+.page.page_theme_islands
+{
+    font-family: 'Helvetica4Light4Light', Arial, Helvetica, sans-serif;
 }

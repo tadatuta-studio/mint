@@ -4,6 +4,8 @@
     },
     "freeze_paths" : {
         "libs/**": ":base64:",
+        "*.blocks/**/*.ttf": "desktop.bundles/index/fonts",
+        "*.blocks/**/*.woff": "desktop.bundles/index/fonts",
         "*.blocks/**": "desktop.bundles/index/i"
     }
 }
