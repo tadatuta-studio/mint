@@ -80,6 +80,7 @@ return {
     ],
     scripts: [{ elem: 'js', url: '_index.js' }],
     mods: { theme: 'islands' },
+    js : true,
     content: [
         {
             block: 'header',

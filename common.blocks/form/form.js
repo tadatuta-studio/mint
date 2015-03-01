@@ -80,6 +80,36 @@ modules.define('form', [
             return this;
         },
 
+        /**
+         * @param {String} target
+         */
+        focus : function(target) {
+            var // кнопка сабмита формы
+                submit = this.findBlockInside({
+                    block : 'button', modName : 'type', modVal : 'submit'
+                }),
+                // Контрол, который будет в фокусе при открытии окна
+                focusTarget,
+                // Первый пустой инпут
+                firstEmptyInput;
+
+            if(target === 'empty') {
+                firstEmptyInput = this.findBlocksInside('input').filter(function(input) {
+                    return !input.getVal();
+                })[0];
+
+                focusTarget = firstEmptyInput && firstEmptyInput.elem('control') || submit.domElem;
+            } else {
+                // первый инпут
+                focusTarget = this.findBlockInside('input');
+                focusTarget = focusTarget.elem('control');
+            }
+
+            focusTarget && focusTarget.focus();
+
+            return this;
+        },
+
         getControlsByName : function(name) {
             var _this = this,
                 blocks = [];

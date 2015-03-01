@@ -4,7 +4,9 @@ modules.define('form', ['i-bem__dom', 'model'], function(provide, BEMDOM, model,
             'submit-status' : {
                 state : function(elem, modName, modVal) {
                     elem.html(({
-                        success : 'Ваша заявка принята, мы свяжемся с вами в ближайшее время!',
+                        success : this.params.model.indexOf('brief') > -1 ?
+                            'Спасибо за обращение, мы выслали бриф на указанный вами email.' :
+                            'Ваша заявка принята, мы свяжемся с вами в ближайшее время!',
                         error :  'Что-то пошло не так, попробуйте повторить позже.'
                     })[modVal]);
                 }
