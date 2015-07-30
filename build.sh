@@ -11,4 +11,4 @@ cp -r desktop.bundles/index/i/* $OUTPUT_DIR/i/
 cp -r i/* $OUTPUT_DIR/i/
 cp favicon.ico $OUTPUT_DIR/
 touch $OUTPUT_DIR/.nojekyll
-echo "mint.msk.ru" >> $OUTPUT_DIR/CNAME
+echo "mint.msk.ru" > $OUTPUT_DIR/CNAME
